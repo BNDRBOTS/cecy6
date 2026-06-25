@@ -2,1099 +2,1358 @@
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Casa Cecy - A meticulously curated tiny-home community in Phoenix, Arizona featuring modern design, quiet surroundings, and dedicated hospitality.">
-    <title>Casa Cecy | Curated Tiny Home Community</title>
-    
-    <!-- Preconnect & Google Fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <!-- ─── Critical Resource Hints ─────────────────────────────────────── -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://r2-uploader-production.up.railway.app">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS v4 Browser CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <!-- Hero image preload — highest priority, decoded before first paint -->
+    <link rel="preload" as="image" href="/images/community-first-frame.jpg" fetchpriority="high">
+    <!-- Font preload — subset display weights only -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Great+Vibes&family=Inter:wght@300;400;500&display=swap">
+
+    <!-- ─── SEO ──────────────────────────────────────────────────────────── -->
+    <title>Casa Cecy | Luxury Tiny Home Community — Phoenix, Arizona</title>
+    <meta name="description" content="Casa Cecy is an exclusive 35-home curated tiny-home community in Phoenix, Arizona. Modern interiors, private entrances, gigabit Wi-Fi, and personalized hospitality minutes from downtown.">
+    <meta name="keywords" content="Casa Cecy, Phoenix tiny home, luxury short term rental Phoenix, boutique rental Phoenix AZ, extended stay Phoenix, tiny home community Arizona, design rental Phoenix">
+    <meta name="author" content="Casa Cecy Community">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://casacecy.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://casacecy.com/">
+    <meta property="og:title" content="Casa Cecy | Luxury Tiny Home Community — Phoenix, Arizona">
+    <meta property="og:description" content="An exclusive 35-home curated community in Phoenix. Modern interiors, private entrances, gigabit Wi-Fi, and personalized hospitality minutes from downtown.">
+    <meta property="og:image" content="https://casacecy.com/images/community-first-frame.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Casa Cecy">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Casa Cecy | Luxury Tiny Home Community — Phoenix, Arizona">
+    <meta name="twitter:description" content="An exclusive 35-home curated community in Phoenix. Modern interiors, private entrances, and personalized hospitality.">
+    <meta name="twitter:image" content="https://casacecy.com/images/community-first-frame.jpg">
+
+    <!-- Geo -->
+    <meta name="geo.region" content="US-AZ">
+    <meta name="geo.placename" content="Phoenix, Arizona">
+    <meta name="geo.position" content="33.4484;-112.0740">
+    <meta name="ICBM" content="33.4484, -112.0740">
+
+    <!-- Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"LodgingBusiness","name":"Casa Cecy","description":"An exclusive curated tiny-home community in Phoenix, Arizona featuring modern design, quiet surroundings, and dedicated hospitality.","url":"https://casacecy.com","telephone":"+1-602-000-0000","address":{"@type":"PostalAddress","streetAddress":"Phoenix","addressLocality":"Phoenix","addressRegion":"AZ","postalCode":"85001","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":33.4484,"longitude":-112.0740},"priceRange":"$$$$","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.94","reviewCount":"103","bestRating":"5","worstRating":"1"},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Air conditioning","value":true},{"@type":"LocationFeatureSpecification","name":"Free WiFi","value":true},{"@type":"LocationFeatureSpecification","name":"Kitchen","value":true},{"@type":"LocationFeatureSpecification","name":"Free parking","value":true},{"@type":"LocationFeatureSpecification","name":"24-hour security","value":true}]}
+    </script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where is Casa Cecy located?","acceptedAnswer":{"@type":"Answer","text":"Casa Cecy is located in Phoenix, Arizona, approximately 2 miles from downtown Phoenix and 10 miles from Sky Harbor International Airport."}},{"@type":"Question","name":"What is the maximum occupancy per suite?","acceptedAnswer":{"@type":"Answer","text":"Each suite accommodates a strict maximum of 3 guests to preserve the community's quiet, private atmosphere."}},{"@type":"Question","name":"Are extended stays available?","acceptedAnswer":{"@type":"Answer","text":"Yes. Casa Cecy welcomes extended residencies of 28 days or more. Please contact our concierge for long-term residency rates."}}]}
+    </script>
+
+    <!-- ─── Fonts ─────────────────────────────────────────────────────────── -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Great+Vibes&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ─── Tailwind v4 ───────────────────────────────────────────────────── -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            espresso: '#140F0E', 
-                            copper: '#C06B3E',   
-                            terracotta: '#8C4A32',
-                            sand: '#F2EFE9',     
-                            charcoal: '#231F1D',
-                            overlay: 'rgba(20, 15, 14, 0.85)'
-                        }
-                    },
-                    fontFamily: {
-                        display: ['Cinzel', 'serif'],
-                        serif: ['"Cormorant Garamond"', 'serif'],
-                        script: ['"Great Vibes"', 'cursive'],
-                        sans: ['Inter', 'sans-serif']
-                    },
-                    transitionTimingFunction: {
-                        'expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
-                        'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',
-                    },
-                    animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'fade-in-up': 'fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                        'scale-in': 'scaleIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-                        'pulse-slow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                    },
-                    keyframes: {
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-12px)' },
-                        },
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(30px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        scaleIn: {
-                            '0%': { opacity: '0', transform: 'scale(1.05)' },
-                            '100%': { opacity: '1', transform: 'scale(1)' },
-                        }
-                    }
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    brand: { espresso:'#140F0E', copper:'#C06B3E', terracotta:'#8C4A32', sand:'#F2EFE9', charcoal:'#231F1D' }
+                },
+                fontFamily: {
+                    display:['Cinzel','serif'],
+                    serif:['"Cormorant Garamond"','serif'],
+                    script:['"Great Vibes"','cursive'],
+                    sans:['Inter','sans-serif']
+                },
+                transitionTimingFunction: { 'expo':'cubic-bezier(0.16,1,0.3,1)' },
+                animation: {
+                    'float':'float 6s ease-in-out infinite',
+                    'fade-in-up':'fadeInUp 1s cubic-bezier(0.16,1,0.3,1) forwards',
+                    'pulse-slow':'pulse 2s cubic-bezier(0.4,0,0.6,1) infinite'
+                },
+                keyframes: {
+                    float:    {'0%,100%':{transform:'translateY(0)'},'50%':{transform:'translateY(-12px)'}},
+                    fadeInUp: {'0%':{opacity:'0',transform:'translateY(30px)'},'100%':{opacity:'1',transform:'translateY(0)'}}
                 }
             }
         }
+    }
     </script>
 
     <style>
-        ::selection {
-            background-color: #C06B3E;
-            color: #F2EFE9;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        /* ─── Reset & Base ─────────────────────────────────────────────── */
+        *,*::before,*::after { box-sizing:border-box; }
+        ::selection { background-color:#C06B3E; color:#F2EFE9; }
+        html { scroll-behavior:smooth; }
         body {
-            background-color: #140F0E;
-            color: #F2EFE9;
-            cursor: none;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
+            background-color:#140F0E;
+            background-image: radial-gradient(circle at 50% 0%, #2e201b 0%, #140F0E 60%), radial-gradient(circle at 100% 100%, #1f1411 0%, transparent 50%);
+            background-attachment: fixed;
+            color:#F2EFE9;
+            cursor:none;
+            -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+            overflow-x:hidden;
+        }
+        .bg-brand-espresso {
+            background-color: #140F0E !important;
+            background-image: radial-gradient(ellipse at 50% -20%, #362520 0%, #140F0E 75%), radial-gradient(ellipse at 100% 100%, #1f1411 0%, transparent 50%) !important;
+        }
+        @media (hover:none) and (pointer:coarse) {
+            body { cursor:auto !important; }
+            #cursor { display:none !important; }
+            .magnetic-wrap { transform:none !important; }
         }
 
-        /* Restore default cursor for touch devices */
-        @media (hover: none) and (pointer: coarse) {
-            body { cursor: auto; }
-            .custom-cursor { display: none !important; }
-            .magnetic-wrap { transform: none !important; }
+        /* ─── Preloader ─────────────────────────────────────────────────── */
+        #preloader {
+            position:fixed; inset:0; z-index:99999;
+            background:#140F0E;
+            display:flex; flex-direction:column; align-items:center; justify-content:center;
+            gap:28px;
+            transition:opacity .8s cubic-bezier(.16,1,.3,1), visibility .8s cubic-bezier(.16,1,.3,1);
+        }
+        #preloader.done { opacity:0; visibility:hidden; pointer-events:none; }
+
+        #preloader-diamond {
+            width:14px; height:14px;
+            background:#C06B3E;
+            transform:rotate(45deg);
+            animation:preloader-pulse 1.2s cubic-bezier(.4,0,.6,1) infinite;
+        }
+        @keyframes preloader-pulse {
+            0%,100% { opacity:1; transform:rotate(45deg) scale(1); }
+            50%      { opacity:.25; transform:rotate(45deg) scale(0.6); }
+        }
+        #preloader-wordmark {
+            font-family:'Cinzel',serif; font-size:.7rem; letter-spacing:.5em;
+            text-transform:uppercase; color:rgba(242,239,233,0.4);
+        }
+        #preloader-bar {
+            width:120px; height:1px; background:rgba(242,239,233,0.08);
+            position:relative; overflow:hidden;
+        }
+        #preloader-bar::after {
+            content:''; position:absolute; left:-100%; top:0;
+            width:100%; height:100%; background:#C06B3E;
+            animation:preloader-sweep 1.4s cubic-bezier(.4,0,.2,1) infinite;
+        }
+        @keyframes preloader-sweep {
+            0%   { left:-100%; }
+            100% { left:100%; }
         }
 
-        .custom-cursor {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 10px;
-            height: 10px;
-            background-color: #C06B3E;
-            transform: rotate(45deg) translate(-50%, -50%);
-            transform-origin: center center;
-            pointer-events: none;
-            z-index: 10000;
-            transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-                        height 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
-                        background-color 0.3s ease, 
-                        border-radius 0.3s ease,
-                        opacity 0.3s ease;
-            mix-blend-mode: difference;
-            will-change: transform, left, top;
+        /* ─── Custom Cursor ─────────────────────────────────────────────── */
+        #cursor {
+            position:fixed; top:0; left:0;
+            width:10px; height:10px;
+            background:#C06B3E;
+            transform:rotate(45deg) translate(-50%,-50%);
+            transform-origin:center center;
+            pointer-events:none; z-index:10000;
+            transition:width .3s cubic-bezier(.16,1,.3,1),
+                        height .3s cubic-bezier(.16,1,.3,1),
+                        background-color .3s ease,
+                        border-radius .3s ease,
+                        opacity .3s ease;
+            mix-blend-mode:difference;
+            will-change:transform,left,top;
+        }
+        #cursor.hovering {
+            width:60px; height:60px; border-radius:50%;
+            background:rgba(242,239,233,0.1);
+            border:1px solid rgba(242,239,233,0.3);
+            transform:rotate(0deg) translate(-50%,-50%);
+            backdrop-filter:blur(2px);
+        }
+        #cursor.hidden-cursor { opacity:0; width:0; height:0; }
+        #cursor.clicking { transform:translate(-50%,-50%) scale(0.7); }
+        #cursor.clicking.hovering { transform:translate(-50%,-50%) scale(0.85); }
+
+        /* ─── Scrollbar ─────────────────────────────────────────────────── */
+        ::-webkit-scrollbar { width:4px; }
+        ::-webkit-scrollbar-track { background:#140F0E; }
+        ::-webkit-scrollbar-thumb { background:#231F1D; border-radius:2px; }
+        ::-webkit-scrollbar-thumb:hover { background:#C06B3E; }
+
+        /* ─── Hero Background Layers ────────────────────────────────────── */
+        #hero-parallax {
+            contain: layout style;
+            /* Cinematic slow-drift: scale from 1.08 → 1.0 over 30s.
+               Plays at 1× native video speed — zero decode chop.
+               The combined drift + scroll parallax reads as slow motion. */
+            animation: heroSlowDrift 30s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+        }
+        @keyframes heroSlowDrift {
+            0%   { transform: scale(1.08) translateZ(0); }
+            100% { transform: scale(1.00) translateZ(0); }
         }
 
-        .custom-cursor.hovering {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: rgba(242, 239, 233, 0.1);
-            border: 1px solid rgba(242, 239, 233, 0.3);
-            transform: rotate(0deg) translate(-50%, -50%);
-            backdrop-filter: blur(2px);
+        /* Fallback image — GPU layer, immediate paint */
+        #hero-fallback-img {
+            position:absolute; inset:0;
+            width:100%; height:100%; object-fit:cover;
+            opacity:0.72;
+            will-change:opacity;
+            transition:opacity 2s cubic-bezier(.4,0,.2,1);
+            transform:translateZ(0);
+            backface-visibility:hidden;
         }
+        #hero-fallback-img.faded { opacity:0; }
 
-        .custom-cursor.hidden-cursor {
-            opacity: 0;
-            width: 0;
-            height: 0;
+        /* Background video — hidden until ready */
+        #hero-video {
+            position:absolute; inset:0;
+            width:100%; height:100%; object-fit:cover;
+            opacity:0;
+            will-change:opacity;
+            transition:opacity 2s cubic-bezier(.4,0,.2,1);
+            transform:translateZ(0);
+            backface-visibility:hidden;
         }
+        #hero-video.visible { opacity:0.72; }
 
-        .custom-cursor.clicking {
-            transform: translate(-50%, -50%) scale(0.7);
-        }
-
-        .custom-cursor.clicking.hovering {
-            transform: translate(-50%, -50%) scale(0.85);
-        }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 6px; }
-        ::-webkit-scrollbar-track { background: #140F0E; }
-        ::-webkit-scrollbar-thumb { background: #231F1D; border-radius: 3px; }
-        ::-webkit-scrollbar-thumb:hover { background: #C06B3E; }
-
-        /* Reveal Animations */
+        /* ─── Reveal ────────────────────────────────────────────────────── */
         .reveal-up {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
-                        transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-            will-change: opacity, transform;
+            opacity:0; transform:translateY(40px);
+            transition:opacity 1.2s cubic-bezier(.16,1,.3,1),
+                        transform 1.2s cubic-bezier(.16,1,.3,1);
+            will-change:opacity,transform;
         }
+        .reveal-up.active { opacity:1; transform:translateY(0); }
+        .reveal-delay-1 { transition-delay:100ms; }
+        .reveal-delay-2 { transition-delay:200ms; }
+        .reveal-delay-3 { transition-delay:300ms; }
 
-        .reveal-up.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .reveal-delay-1 { transition-delay: 100ms; }
-        .reveal-delay-2 { transition-delay: 200ms; }
-        .reveal-delay-3 { transition-delay: 300ms; }
-
-        /* Magnetic Button */
-        .magnetic-wrap {
-            display: inline-block;
-            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        
-        /* Form Input Styling */
-        .input-group { 
-            position: relative; 
-        }
-
-        .input-group input, 
-        .input-group select {
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid rgba(242, 239, 233, 0.2);
-            color: #F2EFE9;
-            width: 100%;
-            padding: 12px 0;
-            outline: none;
-            transition: border-color 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-        }
-
-        .input-group input:focus, 
-        .input-group select:focus {
-            border-color: #C06B3E;
-        }
-
-        .input-group input::placeholder {
-            color: transparent;
-        }
-
-        .input-group label {
-            position: absolute;
-            top: 12px;
-            left: 0;
-            color: rgba(242, 239, 233, 0.5);
-            pointer-events: none;
-            transition: top 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-                        font-size 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-                        color 0.3s ease;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .input-group input:focus ~ label,
-        .input-group input:not(:placeholder-shown) ~ label {
-            top: -16px;
-            font-size: 0.65rem;
-            color: #C06B3E;
-        }
-
-        .input-group select ~ label {
-            top: -16px;
-            font-size: 0.65rem;
-            color: #C06B3E;
-        }
-        
-        /* Scrolled Navbar */
+        /* ─── Nav scrolled ──────────────────────────────────────────────── */
         .nav-scrolled {
-            background-color: rgba(20, 15, 14, 0.9);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            padding-top: 1.25rem !important;
-            padding-bottom: 1.25rem !important;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            background:transparent !important;
+            padding-top:1rem !important;
+            padding-bottom:1rem !important;
+            border-bottom:none !important;
         }
 
-        /* Mobile Link Transitions */
-        .mobile-link {
-            transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-                        transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-        }
+        /* ─── Magnetic ──────────────────────────────────────────────────── */
+        .magnetic-wrap { display:inline-block; transition:transform .3s cubic-bezier(.16,1,.3,1); }
 
-        /* Focus States for Accessibility */
-        a:focus-visible,
-        button:focus-visible,
-        input:focus-visible,
-        select:focus-visible {
-            outline: 2px solid #C06B3E;
-            outline-offset: 2px;
-        }
+        /* ─── Mobile links ──────────────────────────────────────────────── */
+        .mobile-link { transition:opacity .5s cubic-bezier(.16,1,.3,1), transform .5s cubic-bezier(.16,1,.3,1); }
 
-        /* Skip Link */
+        /* ─── Forms ─────────────────────────────────────────────────────── */
+        .input-group { position:relative; }
+        .input-group input, .input-group select {
+            background:transparent; border:none;
+            border-bottom:1px solid rgba(242,239,233,0.2);
+            color:#F2EFE9; width:100%; padding:12px 0; outline:none;
+            transition:border-color .3s ease;
+            font-family:'Inter',sans-serif; font-size:1rem;
+        }
+        .input-group input:focus, .input-group select:focus { border-color:#C06B3E; }
+        .input-group input::placeholder { color:transparent; }
+        .input-group label {
+            position:absolute; top:12px; left:0;
+            color:rgba(242,239,233,0.45); pointer-events:none;
+            transition:top .3s cubic-bezier(.16,1,.3,1), font-size .3s cubic-bezier(.16,1,.3,1), color .3s ease;
+            font-family:'Inter',sans-serif; font-size:.875rem;
+            text-transform:uppercase; letter-spacing:.1em;
+        }
+        .input-group input:focus ~ label,
+        .input-group input:not(:placeholder-shown) ~ label { top:-16px; font-size:.65rem; color:#C06B3E; }
+        .input-group select ~ label { top:-16px; font-size:.65rem; color:#C06B3E; }
+
+        /* ─── Skip link ─────────────────────────────────────────────────── */
         .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #C06B3E;
-            color: white;
-            padding: 8px 16px;
-            z-index: 10001;
-            transition: top 0.3s ease;
+            position:absolute; top:-100px; left:16px;
+            background:#C06B3E; color:#F2EFE9;
+            padding:8px 16px; z-index:10001;
+            font-family:'Inter',sans-serif; font-size:.875rem;
+            transition:top .3s ease;
+        }
+        .skip-link:focus { top:16px; }
+
+        /* ─── Focus ─────────────────────────────────────────────────────── */
+        a:focus-visible, button:focus-visible,
+        input:focus-visible, select:focus-visible {
+            outline:2px solid #C06B3E; outline-offset:3px;
         }
 
-        .skip-link:focus {
-            top: 0;
+        /* ─── Ticker ────────────────────────────────────────────────────── */
+        @keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+        .ticker-inner { animation:ticker 32s linear infinite; white-space:nowrap; }
+        .ticker-inner:hover { animation-play-state:paused; }
+
+        /* ─── Legal scrollable body ─────────────────────────────────────── */
+        .legal-body { max-height:65vh; overflow-y:auto; scrollbar-width:thin; scrollbar-color:#C06B3E #140F0E; }
+        .legal-body::-webkit-scrollbar { width:4px; }
+        .legal-body::-webkit-scrollbar-thumb { background:#C06B3E; border-radius:2px; }
+
+        /* ─── Noise overlay ─────────────────────────────────────────────── */
+        .noise::after {
+            content:''; position:absolute; inset:0;
+            background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events:none; opacity:.35; mix-blend-mode:overlay;
+        }
+
+        /* ─── ENHANCEMENT 1: Vestibular-Safe Motion ─────────────────────── */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+            .reveal-up, .reveal-up.active { opacity: 1 !important; transform: none !important; transition: none !important; }
+            #hero-parallax, #hero-scroll-wrap { animation: none !important; transform: none !important; }
+            .ticker-inner { animation: none !important; }
+            #cursor { display: none !important; }
+            #hero-video { opacity: 1 !important; transition: none !important; }
+            #hero-fallback-img { display: none !important; }
         }
     </style>
 </head>
 
-<body class="antialiased overflow-x-hidden">
-    
-    <!-- Skip to Main Content Link for Accessibility -->
-    <a href="#main-content" class="skip-link font-sans text-sm">Skip to main content</a>
+<body class="antialiased">
 
-    <!-- Custom Cursor -->
-    <div class="custom-cursor" id="cursor" aria-hidden="true"></div>
+<!-- ══════════════════════════════════════════
+     PRELOADER — dissolves once hero image decoded
+═══════════════════════════════════════════ -->
+<div id="preloader" role="status" aria-label="Loading Casa Cecy">
+    <div id="preloader-diamond" aria-hidden="true"></div>
+    <div id="preloader-wordmark" aria-hidden="true">Casa Cecy</div>
+    <div id="preloader-bar" aria-hidden="true"></div>
+</div>
 
-    <!-- Navigation -->
-    <header>
-        <nav class="fixed top-0 w-full z-50 px-6 py-8 flex justify-between items-center transition-all duration-700 ease-expo" id="navbar" role="navigation" aria-label="Main navigation">
-            <a href="#" class="font-display text-white text-xl tracking-[0.2em] uppercase font-semibold hoverable z-50 mix-blend-difference" aria-label="Casa Cecy Home">
-                Casa Cecy
-            </a>
-            
-            <div class="hidden md:flex space-x-12 text-xs tracking-[0.3em] font-display text-white uppercase mix-blend-difference items-center">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div id="cursor" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════ -->
+<header>
+    <nav id="navbar"
+         class="fixed top-0 w-full z-50 px-6 md:px-10 py-7 flex justify-between items-center transition-all duration-700 ease-expo"
+         role="navigation" aria-label="Main navigation">
+
+        <a href="#" class="font-display text-white text-lg tracking-[0.25em] uppercase font-semibold hoverable z-50 mix-blend-difference"
+           aria-label="Casa Cecy Home">Casa Cecy</a>
+
+        <div class="hidden md:flex items-center gap-10">
+            <div class="flex items-center gap-10 text-[10px] tracking-[0.3em] font-display text-white uppercase mix-blend-difference">
                 <a href="#vision" class="hover:text-brand-copper transition-colors hoverable py-2 relative group">
-                    Vision
-                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-brand-copper transition-all duration-300 ease-out group-hover:w-full" aria-hidden="true"></span>
+                    Vision<span class="absolute bottom-0 left-0 w-0 h-px bg-brand-copper transition-all duration-300 group-hover:w-full" aria-hidden="true"></span>
                 </a>
                 <a href="#suites" class="hover:text-brand-copper transition-colors hoverable py-2 relative group">
-                    The Suites
-                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-brand-copper transition-all duration-300 ease-out group-hover:w-full" aria-hidden="true"></span>
+                    The Suites<span class="absolute bottom-0 left-0 w-0 h-px bg-brand-copper transition-all duration-300 group-hover:w-full" aria-hidden="true"></span>
                 </a>
-                <a href="#protocols" class="hover:text-brand-copper transition-colors hoverable py-2 relative group">
-                    Protocols
-                    <span class="absolute bottom-0 left-0 w-0 h-[1px] bg-brand-copper transition-all duration-300 ease-out group-hover:w-full" aria-hidden="true"></span>
+                <a href="#Priorities" class="hover:text-brand-copper transition-colors hoverable py-2 relative group">
+                    Priorities<span class="absolute bottom-0 left-0 w-0 h-px bg-brand-copper transition-all duration-300 group-hover:w-full" aria-hidden="true"></span>
                 </a>
-                <button type="button" onclick="toggleModal('booking-modal')" class="text-brand-espresso bg-white px-6 py-3 hover:bg-brand-copper hover:text-white transition-all duration-300 hoverable font-semibold tracking-[0.2em]">
-                    Reserve
-                </button>
             </div>
-
-            <button type="button" id="mobile-menu-btn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 z-50 hoverable group mix-blend-difference" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
-                <span class="w-6 h-[1px] bg-white block transition-all duration-300 ease-out transform origin-center" id="line1" aria-hidden="true"></span>
-                <span class="w-6 h-[1px] bg-white block mt-2 transition-all duration-300 ease-out transform origin-center" id="line2" aria-hidden="true"></span>
+            <button type="button" onclick="toggleModal('booking-modal')"
+                    class="hoverable border border-white/30 hover:border-brand-copper text-white hover:text-brand-copper font-display text-[10px] tracking-[0.25em] uppercase px-6 py-3 transition-all duration-300">
+                Reserve
             </button>
-        </nav>
-    </header>
+        </div>
 
-    <!-- Mobile Navigation Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 bg-brand-espresso z-40 transform translate-x-full transition-transform duration-700 ease-expo flex flex-col justify-center items-center" role="dialog" aria-modal="true" aria-label="Mobile navigation menu" aria-hidden="true">
-        <nav class="flex flex-col items-center space-y-8 text-center w-full px-6" role="navigation">
-            <a href="#vision" class="mobile-link font-display text-3xl text-brand-sand tracking-widest uppercase hover:text-brand-copper transition-colors opacity-0 translate-y-8">Vision</a>
-            <a href="#suites" class="mobile-link font-display text-3xl text-brand-sand tracking-widest uppercase hover:text-brand-copper transition-colors opacity-0 translate-y-8">The Suites</a>
-            <a href="#protocols" class="mobile-link font-display text-3xl text-brand-sand tracking-widest uppercase hover:text-brand-copper transition-colors opacity-0 translate-y-8">Protocols</a>
-            <div class="w-12 h-[1px] bg-brand-copper/30 my-4 mobile-link opacity-0" aria-hidden="true"></div>
-            <button type="button" onclick="toggleModal('booking-modal'); toggleMobileMenu();" class="mobile-link font-display text-xl text-brand-copper tracking-widest uppercase hover:text-white transition-colors opacity-0 translate-y-8">
-                Reserve a Suite
-            </button>
-        </nav>
+        <button type="button" id="mobile-menu-btn"
+                class="md:hidden flex flex-col justify-center items-center w-10 h-10 z-50 hoverable mix-blend-difference"
+                aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="w-6 h-px bg-white block transition-all duration-300 origin-center" id="line1" aria-hidden="true"></span>
+            <span class="w-6 h-px bg-white block mt-2 transition-all duration-300 origin-center" id="line2" aria-hidden="true"></span>
+        </button>
+    </nav>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+     class="fixed inset-0 bg-brand-espresso z-40 transform translate-x-full transition-transform duration-700 ease-expo flex flex-col justify-center items-center"
+     role="dialog" aria-modal="true" aria-label="Mobile navigation" aria-hidden="true">
+    <nav class="flex flex-col items-center space-y-8 text-center w-full px-6" role="navigation">
+        <a href="#vision"    onclick="toggleMobileMenu()" class="mobile-link font-display text-3xl text-brand-sand tracking-widest uppercase hover:text-brand-copper transition-colors opacity-0 translate-y-8">Vision</a>
+        <a href="#suites"    onclick="toggleMobileMenu()" class="mobile-link font-display text-3xl text-brand-sand tracking-widest uppercase hover:text-brand-copper transition-colors opacity-0 translate-y-8">The Suites</a>
+        <a href="#Priorities" onclick="toggleMobileMenu()" class="mobile-link font-display text-3xl text-brand-sand tracking-widest uppercase hover:text-brand-copper transition-colors opacity-0 translate-y-8">Priorities</a>
+        <div class="w-12 h-px bg-brand-copper/30 my-2 mobile-link opacity-0" aria-hidden="true"></div>
+        <button type="button" onclick="toggleModal('booking-modal'); toggleMobileMenu();"
+                class="mobile-link font-display text-xl text-brand-copper tracking-widest uppercase hover:text-white transition-colors opacity-0 translate-y-8">
+            Reserve a Suite
+        </button>
+    </nav>
+</div>
+
+<!-- ══════════════════════════════════════════
+     MAIN
+═══════════════════════════════════════════ -->
+<main id="main-content">
+
+<!-- ── HERO ─────────────────────────────── -->
+<section class="relative h-[100svh] w-full flex items-center justify-center overflow-hidden bg-brand-espresso noise"
+         aria-labelledby="hero-title">
+
+    <div class="absolute inset-0 z-0">
+        <!-- Gradient vignette — composited layer -->
+        <div class="absolute inset-0 bg-gradient-to-b from-brand-espresso/65 via-brand-espresso/25 to-brand-espresso z-10 pointer-events-none" aria-hidden="true"></div>
+
+        <!-- Drift animation container: slow CSS scale 1.08→1.0 over 30s -->
+        <div id="hero-parallax" class="w-full h-full absolute inset-0">
+
+            <!-- Scroll parallax container: translateY only, composited separately -->
+            <div id="hero-scroll-wrap" class="w-full h-full absolute inset-0" style="will-change:transform;">
+
+                <!-- STATIC FIRST FRAME — highest network priority, async decoded,
+                     remains fully visible until video crossfade completes. -->
+                <img id="hero-fallback-img"
+                     src="/images/community-first-frame.jpg"
+                     alt="Casa Cecy modern tiny home community in Phoenix, Arizona"
+                     fetchpriority="high"
+                     decoding="async"
+                     aria-hidden="true">
+
+                <!-- VIDEO — plays at native 1× speed (smooth, no decode chop).
+                     preload="metadata" loads first frame fast for seamless handoff.
+                     Clean loop managed in JS via timeupdate to prevent stutter. -->
+                <video id="hero-video"
+                       src="https://r2-uploader-production.up.railway.app/files/0f9532e0-a6a1-420f-8df8-539970bd57a5.webm"
+                       preload="metadata"
+                       autoplay
+                       muted
+                       playsinline
+                       aria-hidden="true">
+                </video>
+
+            </div>
+        </div>
     </div>
 
-    <main id="main-content">
-        <!-- Hero Section -->
-        <section class="relative h-[100svh] w-full flex items-center justify-center overflow-hidden bg-brand-espresso" aria-labelledby="hero-title">
-            <!-- Background Video -->
-            <div class="absolute inset-0 z-0">
-                <div class="absolute inset-0 bg-gradient-to-b from-brand-espresso/80 via-brand-espresso/40 to-brand-espresso mix-blend-multiply z-10 pointer-events-none" aria-hidden="true"></div>
-                <video 
-                    src="https://r2-uploader-production.up.railway.app/files/fee32765-4640-4855-adfa-d60a76a05e0f.mp4" 
-                    poster="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&q=80&w=2000"
-                    autoplay 
-                    loop 
-                    muted 
-                    playsinline
-                    aria-hidden="true"
-                    class="w-full h-full object-cover opacity-70 scale-105 transform origin-center transition-transform duration-1000" 
-                    id="hero-parallax">
-                </video>
+    <!-- Hero Content -->
+    <div class="relative z-20 text-center px-4 flex flex-col items-center w-full max-w-7xl mt-16 md:mt-0">
+        <p class="font-display tracking-[0.5em] text-brand-copper uppercase text-[10px] md:text-xs mb-8 animate-fade-in-up">
+            Phoenix, Arizona · Est. Community
+        </p>
+
+        <div class="relative flex flex-col items-center w-full mb-8 z-10 animate-fade-in-up" style="animation-delay:.1s;">
+            <h1 id="hero-title" class="font-display text-white uppercase drop-shadow-2xl tracking-[0.04em] text-[13vw] sm:text-[12vw] md:text-[8rem] lg:text-[9.5rem] leading-[0.85] w-full text-center whitespace-nowrap">
+                WELCOME
+            </h1>
+            <div class="relative flex items-baseline justify-center mt-[1vw] md:mt-3 w-full" aria-hidden="true">
+                <span class="font-script text-white drop-shadow-[0_10px_30px_rgba(0,0,0,0.9)] leading-[1.1] text-[11vw] sm:text-[10vw] md:text-[7rem] lg:text-[8.5rem]">Home</span>
+                <span class="font-script text-brand-copper drop-shadow-[0_8px_20px_rgba(0,0,0,0.9)] leading-[1.1] text-[7.5vw] sm:text-[7vw] md:text-[4.5rem] lg:text-[5.5rem] ml-3 md:ml-5">& relax</span>
             </div>
-            
-            <div class="relative z-20 text-center px-4 flex flex-col items-center w-full max-w-7xl mt-16 md:mt-0">
-                <p class="font-display tracking-[0.4em] text-brand-copper uppercase text-xs md:text-sm mb-6 animate-fade-in-up">Phoenix, Arizona</p>
-                
-                <!-- Hero Title Lockup — each layer owns its box, no overlap -->
-                <div class="relative flex flex-col items-center w-full mb-6 md:mb-10 z-10 animate-fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="relative text-center w-full max-w-[95vw] md:max-w-6xl mx-auto flex flex-col items-center justify-center">
-                        
-                        <!-- WELCOME: leading-[0.85] keeps capitals within their line-box -->
-                        <h1 id="hero-title" class="font-display text-white uppercase drop-shadow-2xl tracking-[0.05em] text-[13vw] sm:text-[12vw] md:text-[8rem] lg:text-[9.5rem] leading-[0.85] relative z-10 w-full text-center whitespace-nowrap">
-                            WELCOME
-                        </h1>
-                        
-                        <!-- Script line: positive margin only, baseline-aligned, no translate hacks -->
-                        <div class="relative flex items-baseline justify-center mt-[1vw] md:mt-2 z-20 w-full" aria-hidden="true">
-                            <span class="font-script text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)] leading-[1.15] text-[11vw] sm:text-[10vw] md:text-[7rem] lg:text-[8.5rem]">Home</span>
-                            <span class="font-script text-brand-copper drop-shadow-[0_8px_16px_rgba(0,0,0,0.8)] leading-[1.15] text-[7.5vw] sm:text-[7vw] md:text-[4.5rem] lg:text-[5.5rem] ml-3 md:ml-4">& relax</span>
-                        </div>
-                        
-                    </div>
-                </div>
+        </div>
 
-                <p class="font-serif text-lg md:text-2xl text-brand-sand/90 max-w-2xl mx-auto leading-relaxed mb-12 drop-shadow-md animate-fade-in-up font-light" style="animation-delay: 0.2s;">
-                    A meticulously curated tiny-home community featuring modern design, quiet surroundings, and dedicated hospitality.
-                </p>
+        <p class="font-serif text-lg md:text-2xl text-brand-sand/80 max-w-xl mx-auto leading-relaxed mb-12 animate-fade-in-up font-light" style="animation-delay:.2s;">
+            A meticulously curated tiny-home community — modern design, quiet surroundings, and dedicated hospitality.
+        </p>
 
-                <div class="animate-fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="magnetic-wrap" id="magnetic-btn">
-                        <button type="button" onclick="toggleModal('booking-modal')" class="inline-block bg-brand-terracotta text-white font-display text-xs md:text-sm tracking-[0.3em] uppercase px-10 py-5 transition-all duration-300 hover:bg-brand-copper shadow-[0_0_40px_rgba(192,107,62,0.2)] hover:shadow-[0_0_60px_rgba(192,107,62,0.4)] hoverable group relative overflow-hidden">
-                            <span class="relative z-10">Check Availability</span>
-                            <div class="absolute inset-0 bg-white/10 transform -translate-x-full skew-x-12 group-hover:translate-x-full transition-transform duration-700 ease-out z-0" aria-hidden="true"></div>
-                        </button>
-                    </div>
-                </div>
+        <div class="animate-fade-in-up flex flex-col items-center gap-4" style="animation-delay:.3s;">
+            <div class="magnetic-wrap" id="magnetic-btn">
+                <button type="button" onclick="toggleModal('booking-modal')"
+                        class="inline-block bg-brand-terracotta text-white font-display text-[10px] md:text-xs tracking-[0.35em] uppercase px-12 py-5 transition-all duration-300 hover:bg-brand-copper shadow-[0_0_60px_rgba(140,74,50,0.25)] hover:shadow-[0_0_80px_rgba(192,107,62,0.4)] hoverable relative overflow-hidden group">
+                    <span class="relative z-10">Check Availability</span>
+                    <div class="absolute inset-0 bg-white/10 transform -translate-x-full skew-x-12 group-hover:translate-x-full transition-transform duration-700 z-0" aria-hidden="true"></div>
+                </button>
             </div>
+            <div class="flex items-center gap-2 font-sans text-[10px] tracking-[0.2em] uppercase text-brand-sand/40">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" aria-hidden="true"></span>
+                Suites available tonight
+            </div>
+        </div>
+    </div>
 
-            <a href="#vision" class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex flex-col items-center animate-fade-in-up hoverable p-4 group" style="animation-delay: 0.6s;" aria-label="Scroll down to discover more">
-                <span class="text-xs font-display tracking-[0.3em] text-brand-copper/60 mb-4 group-hover:text-brand-copper transition-colors" aria-hidden="true">DISCOVER</span>
-                <div class="w-[1px] h-16 bg-white/10 relative overflow-hidden" aria-hidden="true">
-                    <div class="absolute top-0 left-0 w-full h-1/2 bg-brand-copper animate-[float_2s_ease-in-out_infinite]"></div>
-                </div>
+    <!-- Scroll indicator -->
+    <a href="#vision"
+       class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center animate-fade-in-up hoverable p-4 group"
+       style="animation-delay:.6s;" aria-label="Scroll to discover more">
+        <span class="text-[9px] font-display tracking-[0.4em] text-brand-copper/50 mb-4 group-hover:text-brand-copper transition-colors">DISCOVER</span>
+        <div class="w-px h-16 bg-white/10 relative overflow-hidden" aria-hidden="true">
+            <div class="absolute top-0 left-0 w-full h-1/2 bg-brand-copper animate-[float_2s_ease-in-out_infinite]"></div>
+        </div>
+    </a>
+</section>
+
+<!-- ── TICKER ─────────────────────────────── -->
+<div class="bg-brand-charcoal border-y border-white/[0.05] py-4 overflow-hidden" aria-hidden="true">
+    <div class="ticker-inner flex items-center gap-16 text-[10px] font-display tracking-[0.3em] uppercase text-brand-sand/30">
+        <span>Phoenix, Arizona</span><span class="text-brand-copper">◆</span>
+        <span>35 Curated Homes</span><span class="text-brand-copper">◆</span>
+        <span>Rated 4.94 / 5.00</span><span class="text-brand-copper">◆</span>
+        <span>103 Verified Reviews</span><span class="text-brand-copper">◆</span>
+        <span>2 Miles from Downtown</span><span class="text-brand-copper">◆</span>
+        <span>Gigabit Wi-Fi</span><span class="text-brand-copper">◆</span>
+        <span>Private Entrances</span><span class="text-brand-copper">◆</span>
+        <span>Extended Stay Welcome</span><span class="text-brand-copper">◆</span>
+        <span>24/7 Security</span><span class="text-brand-copper">◆</span>
+        <span>Phoenix, Arizona</span><span class="text-brand-copper">◆</span>
+        <span>35 Curated Homes</span><span class="text-brand-copper">◆</span>
+        <span>Rated 4.94 / 5.00</span><span class="text-brand-copper">◆</span>
+        <span>103 Verified Reviews</span><span class="text-brand-copper">◆</span>
+        <span>2 Miles from Downtown</span><span class="text-brand-copper">◆</span>
+        <span>Gigabit Wi-Fi</span><span class="text-brand-copper">◆</span>
+        <span>Private Entrances</span><span class="text-brand-copper">◆</span>
+        <span>Extended Stay Welcome</span><span class="text-brand-copper">◆</span>
+        <span>24/7 Security</span><span class="text-brand-copper">◆</span>
+    </div>
+</div>
+
+<!-- ── VISION ─────────────────────────────── -->
+<section id="vision" class="py-32 md:py-48 px-6 md:px-12 lg:px-24 bg-brand-sand text-brand-espresso relative z-10"
+         aria-labelledby="vision-title">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center">
+
+        <div class="lg:col-span-5 reveal-up z-20">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-px bg-brand-copper" aria-hidden="true"></div>
+                <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-[10px] font-semibold">The Concept</p>
+            </div>
+            <h2 id="vision-title" class="font-display text-4xl md:text-5xl lg:text-6xl mb-8 leading-[1.05] text-brand-espresso">
+                Elevated Living,<br>
+                <em class="font-serif italic not-italic text-brand-terracotta">Intentionally</em> Scaled.
+            </h2>
+            <p class="font-serif text-xl leading-relaxed text-brand-charcoal/75 mb-6 font-light">
+                Escape to a tranquil oasis minutes from downtown Phoenix. Casa Cecy is a curated 35-townhome community designed for discerning travelers who refuse to settle.
+            </p>
+            <p class="font-serif text-xl leading-relaxed text-brand-charcoal/75 font-light mb-12">
+                We replace the generic hotel experience with deeply personalized hospitality, uncompromising interior finishes, and a cohesive, quiet neighborhood atmosphere.
+            </p>
+            <a href="#suites" class="inline-flex items-center gap-5 font-display text-xs tracking-[0.3em] uppercase text-brand-charcoal hover:text-brand-copper transition-colors group hoverable">
+                Explore the Suites
+                <span class="w-8 h-px bg-current transform group-hover:w-14 transition-all duration-500" aria-hidden="true"></span>
             </a>
-        </section>
+        </div>
 
-        <!-- Vision Section -->
-        <section id="vision" class="py-32 md:py-48 px-6 md:px-12 lg:px-24 bg-brand-sand text-brand-espresso relative z-10" aria-labelledby="vision-title">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 items-center">
-                <div class="lg:col-span-5 reveal-up z-20">
-                    <div class="flex items-center gap-4 mb-8">
-                        <div class="w-12 h-[1px] bg-brand-copper" aria-hidden="true"></div>
-                        <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-xs font-semibold">The Concept</p>
+        <div class="lg:col-span-7 relative h-[520px] md:h-[720px] w-full reveal-up reveal-delay-1">
+            <div class="absolute inset-0 bg-brand-charcoal/8 transform translate-x-5 translate-y-5 md:translate-x-10 md:translate-y-10" aria-hidden="true"></div>
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+                 alt="Luxurious modern interior of a Casa Cecy tiny home featuring warm wood finishes and contemporary design"
+                 class="w-full h-full object-cover shadow-2xl relative z-10 hoverable"
+                 loading="lazy" decoding="async">
+            <div class="absolute -bottom-6 -left-6 md:-bottom-10 md:-left-10 bg-brand-espresso p-8 md:p-10 shadow-2xl z-20 hidden sm:block w-60 border border-white/5">
+                <p class="font-display text-brand-sand text-6xl leading-none mb-1">35</p>
+                <p class="font-serif text-brand-copper text-lg italic mb-5">Curated Homes</p>
+                <div class="w-full h-px bg-brand-charcoal" aria-hidden="true"></div>
+                <p class="font-display text-brand-sand/40 text-[9px] tracking-[0.3em] uppercase mt-4">Zero Compromise</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── SUITES ─────────────────────────────── -->
+<section id="suites" class="py-32 md:py-40 bg-brand-charcoal text-brand-sand" aria-labelledby="suites-title">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 reveal-up gap-6">
+            <div class="max-w-2xl">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-px bg-brand-copper" aria-hidden="true"></div>
+                    <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-[10px] font-semibold">Accommodations</p>
+                </div>
+                <h2 id="suites-title" class="font-display text-4xl md:text-5xl mb-6 leading-tight">The Suites Collection</h2>
+                <p class="font-serif text-xl text-brand-sand/60 font-light">Each structure is an architectural study in maximizing space without sacrificing luxury.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+            <article class="group relative overflow-hidden bg-brand-espresso cursor-pointer hoverable reveal-up"
+                     onclick="toggleModal('booking-modal')" role="button" tabindex="0"
+                     onkeydown="if(event.key==='Enter')toggleModal('booking-modal')"
+                     aria-label="Reserve The Sonora Suite">
+                <div class="aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                         alt="The Sonora Suite — minimalist desert-facing interior"
+                         loading="lazy" decoding="async"
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-expo opacity-75 group-hover:opacity-100">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-espresso via-brand-espresso/40 to-transparent opacity-95 group-hover:opacity-80 transition-opacity duration-500" aria-hidden="true"></div>
+                <div class="absolute bottom-0 left-0 w-full p-8 transform translate-y-3 group-hover:translate-y-0 transition-transform duration-500 ease-expo">
+                    <p class="font-sans text-brand-copper text-[10px] tracking-[0.3em] uppercase mb-2 font-semibold">1 Bed · 1 Bath · Kitchenette</p>
+                    <h3 class="font-display text-3xl text-white mb-3">The Sonora</h3>
+                    <p class="font-serif text-brand-sand/65 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-h-0 group-hover:max-h-24 overflow-hidden leading-relaxed">A minimalist haven featuring rich dark woods and panoramic desert-facing windows.</p>
+                    <div class="flex items-center gap-3 text-white font-display text-[10px] tracking-[0.3em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+                        <span>Reserve</span><div class="w-8 h-px bg-brand-copper" aria-hidden="true"></div>
                     </div>
-                    <h2 id="vision-title" class="text-4xl md:text-5xl lg:text-6xl font-display mb-8 leading-[1.1]">Elevated Living,<br>Intentionally Scaled.</h2>
-                    <p class="font-serif text-xl leading-relaxed text-brand-charcoal/80 mb-6 font-light">
-                        Escape to a tranquil oasis just minutes from downtown Phoenix. Casa Cecy is a curated 35-townhome and tiny-living community designed for discerning travelers.
-                    </p>
-                    <p class="font-serif text-xl leading-relaxed text-brand-charcoal/80 font-light mb-10">
-                        We replace the generic hotel experience with deeply personalized hospitality, uncompromising interior finishes, and a cohesive, quiet neighborhood atmosphere.
-                    </p>
-                    <a href="#suites" class="inline-flex items-center gap-4 font-display text-sm tracking-widest uppercase text-brand-charcoal hover:text-brand-copper transition-colors group hoverable">
-                        Explore Suites
-                        <svg class="w-6 h-6 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </div>
+            </article>
+
+            <article class="group relative overflow-hidden bg-brand-espresso cursor-pointer hoverable reveal-up reveal-delay-1"
+                     onclick="toggleModal('booking-modal')" role="button" tabindex="0"
+                     onkeydown="if(event.key==='Enter')toggleModal('booking-modal')"
+                     aria-label="Reserve The Sedona Suite">
+                <div class="aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                         alt="The Sedona Suite — terracotta-toned expanded interior"
+                         loading="lazy" decoding="async"
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-expo opacity-75 group-hover:opacity-100">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-espresso via-brand-espresso/40 to-transparent opacity-95 group-hover:opacity-80 transition-opacity duration-500" aria-hidden="true"></div>
+                <div class="absolute bottom-0 left-0 w-full p-8 transform translate-y-3 group-hover:translate-y-0 transition-transform duration-500 ease-expo">
+                    <p class="font-sans text-brand-copper text-[10px] tracking-[0.3em] uppercase mb-2 font-semibold">2 Bed · 1 Bath · Full Kitchen</p>
+                    <h3 class="font-display text-3xl text-white mb-3">The Sedona</h3>
+                    <p class="font-serif text-brand-sand/65 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-h-0 group-hover:max-h-24 overflow-hidden leading-relaxed">Warm terracotta accents and an expanded living area designed for extended stays.</p>
+                    <div class="flex items-center gap-3 text-white font-display text-[10px] tracking-[0.3em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+                        <span>Reserve</span><div class="w-8 h-px bg-brand-copper" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="group relative overflow-hidden bg-brand-espresso cursor-pointer hoverable reveal-up reveal-delay-2"
+                     onclick="toggleModal('booking-modal')" role="button" tabindex="0"
+                     onkeydown="if(event.key==='Enter')toggleModal('booking-modal')"
+                     aria-label="Reserve The Verde Suite">
+                <div class="aspect-[3/4] overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                         alt="The Verde Suite — botanical courtyard sanctuary"
+                         loading="lazy" decoding="async"
+                         class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-expo opacity-75 group-hover:opacity-100">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-espresso via-brand-espresso/40 to-transparent opacity-95 group-hover:opacity-80 transition-opacity duration-500" aria-hidden="true"></div>
+                <div class="absolute bottom-0 left-0 w-full p-8 transform translate-y-3 group-hover:translate-y-0 transition-transform duration-500 ease-expo">
+                    <p class="font-sans text-brand-copper text-[10px] tracking-[0.3em] uppercase mb-2 font-semibold">1 Bed · 1 Bath · Courtyard</p>
+                    <h3 class="font-display text-3xl text-white mb-3">The Verde</h3>
+                    <p class="font-serif text-brand-sand/65 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-h-0 group-hover:max-h-24 overflow-hidden leading-relaxed">Bright, airy, botanical. A private enclosed courtyard for seamless indoor/outdoor living.</p>
+                    <div class="flex items-center gap-3 text-white font-display text-[10px] tracking-[0.3em] uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+                        <span>Reserve</span><div class="w-8 h-px bg-brand-copper" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── PRIORITIES ────────────────────────────── -->
+<section id="Priorities" class="bg-brand-espresso text-brand-sand relative overflow-hidden noise" aria-labelledby="Priorities-title">
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_70%_40%_at_50%_0%,rgba(192,107,62,0.07),transparent)] pointer-events-none" aria-hidden="true"></div>
+
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 pt-32 pb-20 reveal-up relative z-10">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-px bg-brand-copper" aria-hidden="true"></div>
+                    <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-[10px] font-semibold">Our Standards</p>
+                </div>
+                <h2 id="Priorities-title" class="font-display leading-[0.92]">
+                    <span class="block text-5xl md:text-6xl lg:text-7xl text-white">Uncompromising</span>
+                    <span class="block font-serif italic text-4xl md:text-5xl lg:text-6xl text-brand-copper/80 font-light mt-1">Quality.</span>
+                </h2>
+            </div>
+            <p class="font-serif text-brand-sand/45 text-lg font-light max-w-xs leading-relaxed md:text-right">Every detail is held to a standard most hotels will never reach.</p>
+        </div>
+    </div>
+
+    <div class="relative z-10">
+        <article class="reveal-up group hoverable border-t border-white/[0.06] hover:bg-white/[0.025] transition-colors duration-700">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-14 grid grid-cols-12 gap-6 items-start">
+                <div class="col-span-1 hidden md:block">
+                    <span class="font-display text-[4.5rem] leading-none text-brand-copper/12 group-hover:text-brand-copper/25 transition-colors duration-700 select-none">01</span>
+                </div>
+                <div class="col-span-12 md:col-span-4 lg:col-span-3 flex items-center gap-5">
+                    <div class="w-9 h-9 border border-brand-copper/30 group-hover:border-brand-copper/60 transition-colors flex items-center justify-center text-brand-copper flex-shrink-0">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="square" stroke-linejoin="miter" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"></path></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white group-hover:text-brand-copper transition-colors duration-500 tracking-wide">Premium Comfort</h3>
+                </div>
+                <div class="col-span-12 md:col-span-7 lg:col-span-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Climate</p><p class="font-serif text-brand-sand/75 text-base font-light">Precision A/C & heating, every suite</p></div></div>
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Kitchen</p><p class="font-serif text-brand-sand/75 text-base font-light">Fully stocked, curated for the season</p></div></div>
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Entertainment</p><p class="font-serif text-brand-sand/75 text-base font-light">42" HDTV, premium streaming included</p></div></div>
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Connectivity</p><p class="font-serif text-brand-sand/75 text-base font-light">Dedicated gigabit Wi-Fi workspace</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="reveal-up reveal-delay-1 group hoverable border-t border-white/[0.06] hover:bg-white/[0.025] transition-colors duration-700">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-14 grid grid-cols-12 gap-6 items-start">
+                <div class="col-span-1 hidden md:block">
+                    <span class="font-display text-[4.5rem] leading-none text-brand-copper/12 group-hover:text-brand-copper/25 transition-colors duration-700 select-none">02</span>
+                </div>
+                <div class="col-span-12 md:col-span-4 lg:col-span-3 flex items-center gap-5">
+                    <div class="w-9 h-9 border border-brand-copper/30 group-hover:border-brand-copper/60 transition-colors flex items-center justify-center text-brand-copper flex-shrink-0">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="square" stroke-linejoin="miter" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"></path></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white group-hover:text-brand-copper transition-colors duration-500 tracking-wide">Property Priorities</h3>
+                </div>
+                <div class="col-span-12 md:col-span-7 lg:col-span-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Occupancy</p><p class="font-serif text-brand-sand/75 text-base font-light">3-guest maximum, always honoured</p></div></div>
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Duration</p><p class="font-serif text-brand-sand/75 text-base font-light">Extended residency welcome (28+ days)</p></div></div>
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Laundry</p><p class="font-serif text-brand-sand/75 text-base font-light">Pristine on-site facilities, always available</p></div></div>
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Parking</p><p class="font-serif text-brand-sand/75 text-base font-light">Dedicated premises parking, complimentary</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="reveal-up reveal-delay-2 group hoverable border-t border-b border-white/[0.06] hover:bg-white/[0.025] transition-colors duration-700">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-14 grid grid-cols-12 gap-6 items-start">
+                <div class="col-span-1 hidden md:block">
+                    <span class="font-display text-[4.5rem] leading-none text-brand-copper/12 group-hover:text-brand-copper/25 transition-colors duration-700 select-none">03</span>
+                </div>
+                <div class="col-span-12 md:col-span-4 lg:col-span-3 flex items-center gap-5">
+                    <div class="w-9 h-9 border border-brand-copper/30 group-hover:border-brand-copper/60 transition-colors flex items-center justify-center text-brand-copper flex-shrink-0">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="square" stroke-linejoin="miter" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"></path></svg>
+                    </div>
+                    <h3 class="font-display text-lg text-white group-hover:text-brand-copper transition-colors duration-500 tracking-wide">Security & Access</h3>
+                </div>
+                <div class="col-span-12 md:col-span-7 lg:col-span-8">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Surveillance</p><p class="font-serif text-brand-sand/75 text-base font-light">24/7 exterior monitoring network</p></div></div>
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Check-In</p><p class="font-serif text-brand-sand/75 text-base font-light">Encrypted keypad — fully contactless</p></div></div>
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Privacy</p><p class="font-serif text-brand-sand/75 text-base font-light">Private, unshared entrances at every suite</p></div></div>
+                        <div class="flex items-start gap-4"><div class="w-px min-h-[2rem] bg-brand-copper/25 flex-shrink-0 mt-1" aria-hidden="true"></div><div><p class="font-sans text-[9px] tracking-[0.25em] uppercase text-brand-copper/55 mb-1">Support</p><p class="font-serif text-brand-sand/75 text-base font-light">On-site staff, immediate response</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 pb-28 pt-14 reveal-up">
+        <button type="button" onclick="toggleModal('booking-modal')"
+                class="hoverable group inline-flex items-center gap-6 font-display text-[10px] tracking-[0.35em] uppercase text-brand-sand/35 hover:text-brand-copper transition-colors duration-500">
+            <span class="w-16 h-px bg-brand-copper/25 group-hover:bg-brand-copper group-hover:w-24 transition-all duration-500" aria-hidden="true"></span>
+            Reserve your suite
+            <span class="w-8 h-px bg-brand-copper/25 group-hover:bg-brand-copper transition-colors duration-500" aria-hidden="true"></span>
+        </button>
+    </div>
+</section>
+
+<!-- ── LOCATION ────────────────────────────── -->
+<section class="py-32 px-6 md:px-12 bg-brand-sand text-brand-espresso border-y border-brand-charcoal/10"
+         aria-labelledby="location-title">
+    <div class="max-w-5xl mx-auto reveal-up">
+        <div class="text-center mb-20">
+            <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-[10px] mb-6 font-semibold">Coordinates</p>
+            <h2 id="location-title" class="font-display text-4xl md:text-5xl mb-6">The Location Matrix</h2>
+            <p class="font-serif text-brand-charcoal/65 text-xl font-light">Perfectly positioned for business, events, and exploration.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 font-serif text-xl">
+            <div class="flex justify-between items-end border-b border-brand-charcoal/15 py-6 hoverable group"><span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4"><svg class="w-4 h-4 text-brand-copper/40 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>Downtown Phoenix</span><div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/25 transition-colors" aria-hidden="true"></div><span class="text-brand-copper font-sans tracking-[0.2em] text-xs font-semibold">2.0 MI</span></div>
+            <div class="flex justify-between items-end border-b border-brand-charcoal/15 py-6 hoverable group"><span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4"><svg class="w-4 h-4 text-brand-copper/40 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>Convention Center</span><div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/25 transition-colors" aria-hidden="true"></div><span class="text-brand-copper font-sans tracking-[0.2em] text-xs font-semibold">3.0 MI</span></div>
+            <div class="flex justify-between items-end border-b border-brand-charcoal/15 py-6 hoverable group"><span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4"><svg class="w-4 h-4 text-brand-copper/40 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>Footprint Center</span><div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/25 transition-colors" aria-hidden="true"></div><span class="text-brand-copper font-sans tracking-[0.2em] text-xs font-semibold">3.0 MI</span></div>
+            <div class="flex justify-between items-end border-b border-brand-charcoal/15 py-6 hoverable group"><span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4"><svg class="w-4 h-4 text-brand-copper/40 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>Chase Field</span><div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/25 transition-colors" aria-hidden="true"></div><span class="text-brand-copper font-sans tracking-[0.2em] text-xs font-semibold">3.0 MI</span></div>
+            <div class="flex justify-between items-end border-b border-brand-charcoal/15 py-6 hoverable group"><span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4"><svg class="w-4 h-4 text-brand-copper/40 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>Phoenix Art Museum</span><div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/25 transition-colors" aria-hidden="true"></div><span class="text-brand-copper font-sans tracking-[0.2em] text-xs font-semibold">3.0 MI</span></div>
+            <div class="flex justify-between items-end border-b border-brand-charcoal/15 py-6 hoverable group"><span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4"><svg class="w-4 h-4 text-brand-copper/40 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>Sky Harbor Airport</span><div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/25 transition-colors" aria-hidden="true"></div><span class="text-brand-copper font-sans tracking-[0.2em] text-xs font-semibold">10.0 MI</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- ── TESTIMONIALS ────────────────────────── -->
+<section class="bg-brand-espresso text-brand-sand overflow-hidden relative" aria-labelledby="testimonials-title">
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[60vw] h-[35vh] bg-brand-copper/5 blur-[100px] rounded-full pointer-events-none" aria-hidden="true"></div>
+    <div class="border-b border-white/[0.05]">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24 py-20 reveal-up flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-px bg-brand-copper" aria-hidden="true"></div>
+                    <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-[10px] font-semibold">Guest Experiences</p>
+                </div>
+                <h2 id="testimonials-title" class="font-display leading-none">
+                    <span class="block text-[4rem] md:text-[5.5rem] lg:text-[7rem] text-white leading-none tracking-tight">4.94</span>
+                    <span class="block font-serif italic text-2xl md:text-3xl text-brand-copper/60 mt-2 font-light">out of 5.00 — 103 verified guests</span>
+                </h2>
+            </div>
+            <button type="button" onclick="toggleModal('booking-modal')"
+                    class="hoverable self-start md:self-end flex-shrink-0 border border-brand-copper/40 hover:border-brand-copper hover:bg-brand-copper text-brand-copper hover:text-white font-display text-[10px] tracking-[0.25em] uppercase px-8 py-4 transition-all duration-300">
+                Reserve Now
+            </button>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+        <blockquote class="reveal-up border-b border-white/[0.05] py-16 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-8 group hoverable">
+            <div class="md:col-span-2 flex flex-row md:flex-col items-start gap-5 md:gap-3">
+                <div class="flex text-brand-copper text-xs tracking-widest" aria-label="5 stars">★★★★★</div>
+                <footer class="font-display text-[9px] tracking-[0.25em] uppercase text-brand-sand/35 leading-relaxed">Katie<br class="hidden md:block">Wyoming</footer>
+            </div>
+            <div class="md:col-span-10">
+                <p class="font-serif text-2xl md:text-3xl lg:text-4xl text-brand-sand/80 leading-[1.25] font-light group-hover:text-white transition-colors duration-700">"Another amazing stay. My favorite place in Phoenix — the host is <em class="text-brand-copper not-italic">always responsive</em>, everything pristine. Can't wait to return."</p>
+            </div>
+        </blockquote>
+        <blockquote class="reveal-up reveal-delay-1 border-b border-white/[0.05] py-16 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-8 group hoverable">
+            <div class="md:col-span-2 flex flex-row md:flex-col items-start gap-5 md:gap-3">
+                <div class="flex text-brand-copper text-xs tracking-widest" aria-label="5 stars">★★★★★</div>
+                <footer class="font-display text-[9px] tracking-[0.25em] uppercase text-brand-sand/35 leading-relaxed">Melissa<br class="hidden md:block">California</footer>
+            </div>
+            <div class="md:col-span-10">
+                <p class="font-serif text-2xl md:text-3xl lg:text-4xl text-brand-sand/80 leading-[1.25] font-light group-hover:text-white transition-colors duration-700">"Exceptional hospitality — responds promptly, goes above and beyond. The interior design felt <em class="text-brand-copper not-italic">genuinely luxurious</em>. Couldn't recommend more highly."</p>
+            </div>
+        </blockquote>
+        <blockquote class="reveal-up reveal-delay-2 py-16 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-8 group hoverable">
+            <div class="md:col-span-2 flex flex-row md:flex-col items-start gap-5 md:gap-3">
+                <div class="flex text-brand-copper text-xs tracking-widest" aria-label="5 stars">★★★★★</div>
+                <footer class="font-display text-[9px] tracking-[0.25em] uppercase text-brand-sand/35 leading-relaxed">Jabari<br class="hidden md:block">Arizona</footer>
+            </div>
+            <div class="md:col-span-10">
+                <p class="font-serif text-2xl md:text-3xl lg:text-4xl text-brand-sand/80 leading-[1.25] font-light group-hover:text-white transition-colors duration-700">"Booked last minute — pleasantly surprised. Climate control flawless, kitchen fully stocked, felt <em class="text-brand-copper not-italic">completely secure</em>. An absolute hidden gem."</p>
+            </div>
+        </blockquote>
+    </div>
+</section>
+
+</main>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer class="bg-brand-espresso pt-32 pb-12 border-t border-white/[0.05] text-brand-sand relative overflow-hidden"
+        itemscope itemtype="https://schema.org/LodgingBusiness">
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[1500px] opacity-[0.03] pointer-events-none select-none overflow-hidden" aria-hidden="true">
+        <span class="font-display text-[15vw] leading-none text-white whitespace-nowrap block">CASA CECY</span>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-24">
+            <div class="lg:col-span-2">
+                <h2 class="font-display text-4xl tracking-[0.22em] uppercase mb-5 text-white" itemprop="name">Casa Cecy</h2>
+                <p class="font-serif text-lg text-brand-sand/50 max-w-sm mb-3 font-light" itemprop="description">Redefining the short-term stay through intentional design and personalized hospitality.</p>
+                <p class="font-sans text-[10px] tracking-widest uppercase text-brand-sand/25" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                    <span itemprop="addressLocality">Phoenix</span>, <span itemprop="addressRegion">AZ</span> · <span itemprop="addressCountry">USA</span>
+                </p>
+                <div class="flex items-center gap-4 mt-8">
+                    <a href="#" class="hoverable w-9 h-9 border border-white/10 hover:border-brand-copper flex items-center justify-center transition-colors group" aria-label="Instagram">
+                        <svg class="w-4 h-4 text-brand-sand/40 group-hover:text-brand-copper transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
                     </a>
                 </div>
-                
-                <div class="lg:col-span-7 relative h-[500px] md:h-[700px] w-full reveal-up reveal-delay-1">
-                    <div class="absolute inset-0 bg-brand-charcoal/5 transform translate-x-4 translate-y-4 md:translate-x-8 md:translate-y-8" aria-hidden="true"></div>
-                    <img 
-                        src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-                        alt="Luxurious modern interior of a Casa Cecy tiny home featuring warm wood finishes and contemporary design" 
-                        class="w-full h-full object-cover shadow-2xl relative z-10 hoverable filter grayscale-[20%] hover:grayscale-0 transition-all duration-700"
-                        loading="lazy"
-                        onerror="this.onerror=null; this.src='https://placehold.co/800x1200/231F1D/F2EFE9?text=Interior+View'">
-                    
-                    <div class="absolute -bottom-6 -left-6 md:-bottom-10 md:-left-10 bg-brand-espresso p-8 md:p-12 shadow-2xl z-20 hidden sm:block w-64 border border-white/5">
-                        <p class="font-display text-brand-sand text-5xl mb-2">35</p>
-                        <p class="font-serif text-brand-copper text-lg italic mb-4">Curated Homes</p>
-                        <div class="w-full h-[1px] bg-brand-charcoal" aria-hidden="true"></div>
-                        <p class="font-display text-brand-sand/50 text-xs tracking-widest uppercase mt-4">Zero Compromise</p>
-                    </div>
-                </div>
             </div>
-        </section>
-
-        <!-- Suites Section -->
-        <section id="suites" class="py-32 md:py-40 bg-brand-charcoal text-brand-sand" aria-labelledby="suites-title">
-            <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-20 reveal-up">
-                    <div class="max-w-2xl">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-[1px] bg-brand-copper" aria-hidden="true"></div>
-                            <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-xs font-semibold">Accommodations</p>
-                        </div>
-                        <h2 id="suites-title" class="text-4xl md:text-5xl font-display mb-6">The Suites Collection</h2>
-                        <p class="font-serif text-xl text-brand-sand/70 font-light">Each structure is an architectural study in maximizing space without sacrificing luxury. Select the layout that aligns with your journey.</p>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-10">
-                    <!-- Suite Card: Sonora -->
-                    <article class="group relative overflow-hidden bg-brand-espresso cursor-pointer hoverable reveal-up" onclick="toggleModal('booking-modal')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')toggleModal('booking-modal')" aria-label="Reserve The Sonora Suite">
-                        <div class="aspect-[3/4] overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                                alt="The Sonora Suite exterior view" 
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-expo opacity-80 group-hover:opacity-100"
-                                loading="lazy"
-                                onerror="this.onerror=null; this.src='https://placehold.co/600x800/140F0E/F2EFE9?text=Sonora+Suite'">
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-espresso via-brand-espresso/50 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-500" aria-hidden="true"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-expo">
-                            <p class="font-sans text-brand-copper text-xs tracking-widest uppercase mb-2 font-semibold">1 Bed · 1 Bath · Kitchenette</p>
-                            <h3 class="font-display text-3xl text-white mb-2">The Sonora</h3>
-                            <p class="font-serif text-brand-sand/70 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-h-0 group-hover:max-h-20 overflow-hidden">A minimalist haven featuring rich dark woods and panoramic desert-facing windows.</p>
-                            <div class="flex items-center gap-3 text-white font-display text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
-                                <span>Reserve</span>
-                                <div class="w-8 h-[1px] bg-brand-copper" aria-hidden="true"></div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Suite Card: Sedona -->
-                    <article class="group relative overflow-hidden bg-brand-espresso cursor-pointer hoverable reveal-up reveal-delay-1" onclick="toggleModal('booking-modal')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')toggleModal('booking-modal')" aria-label="Reserve The Sedona Suite">
-                        <div class="aspect-[3/4] overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                                alt="The Sedona Suite interior view" 
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-expo opacity-80 group-hover:opacity-100"
-                                loading="lazy"
-                                onerror="this.onerror=null; this.src='https://placehold.co/600x800/140F0E/F2EFE9?text=Sedona+Suite'">
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-espresso via-brand-espresso/50 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-500" aria-hidden="true"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-expo">
-                            <p class="font-sans text-brand-copper text-xs tracking-widest uppercase mb-2 font-semibold">2 Bed · 1 Bath · Full Kitchen</p>
-                            <h3 class="font-display text-3xl text-white mb-2">The Sedona</h3>
-                            <p class="font-serif text-brand-sand/70 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-h-0 group-hover:max-h-20 overflow-hidden">Warm terracotta accents and an expanded living area designed for extended stays.</p>
-                            <div class="flex items-center gap-3 text-white font-display text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
-                                <span>Reserve</span>
-                                <div class="w-8 h-[1px] bg-brand-copper" aria-hidden="true"></div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Suite Card: Verde -->
-                    <article class="group relative overflow-hidden bg-brand-espresso cursor-pointer hoverable reveal-up reveal-delay-2" onclick="toggleModal('booking-modal')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')toggleModal('booking-modal')" aria-label="Reserve The Verde Suite">
-                        <div class="aspect-[3/4] overflow-hidden">
-                            <img 
-                                src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                                alt="The Verde Suite interior view" 
-                                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-1000 ease-expo opacity-80 group-hover:opacity-100"
-                                loading="lazy"
-                                onerror="this.onerror=null; this.src='https://placehold.co/600x800/140F0E/F2EFE9?text=Verde+Suite'">
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-brand-espresso via-brand-espresso/50 to-transparent opacity-90 group-hover:opacity-70 transition-opacity duration-500" aria-hidden="true"></div>
-                        <div class="absolute bottom-0 left-0 w-full p-8 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-expo">
-                            <p class="font-sans text-brand-copper text-xs tracking-widest uppercase mb-2 font-semibold">1 Bed · 1 Bath · Courtyard</p>
-                            <h3 class="font-display text-3xl text-white mb-2">The Verde</h3>
-                            <p class="font-serif text-brand-sand/70 mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 max-h-0 group-hover:max-h-20 overflow-hidden">Bright, airy, and botanical. Features a private enclosed courtyard for seamless indoor/outdoor flow.</p>
-                            <div class="flex items-center gap-3 text-white font-display text-xs tracking-widest uppercase opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
-                                <span>Reserve</span>
-                                <div class="w-8 h-[1px] bg-brand-copper" aria-hidden="true"></div>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+            <div>
+                <h3 class="font-sans text-[9px] tracking-[0.3em] uppercase text-brand-copper mb-6 font-semibold">Directory</h3>
+                <ul class="space-y-4 font-serif text-brand-sand/60">
+                    <li><a href="#vision"    class="hover:text-white transition-colors hoverable">The Concept</a></li>
+                    <li><a href="#suites"    class="hover:text-white transition-colors hoverable">Accommodations</a></li>
+                    <li><a href="#Priorities" class="hover:text-white transition-colors hoverable">Priorities</a></li>
+                    <li><button type="button" onclick="toggleModal('booking-modal')" class="hover:text-white transition-colors hoverable text-left">Reservations</button></li>
+                </ul>
             </div>
-        </section>
-
-        <!-- Protocols Section -->
-        <section id="protocols" class="py-32 px-6 md:px-12 lg:px-24 bg-brand-espresso text-brand-sand border-t border-white/5 relative" aria-labelledby="protocols-title">
-            <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-b from-brand-charcoal/30 to-transparent pointer-events-none" aria-hidden="true"></div>
-
-            <div class="max-w-7xl mx-auto text-center mb-24 reveal-up relative z-10">
-                <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-xs mb-6 font-semibold">Our Standards</p>
-                <h2 id="protocols-title" class="text-4xl md:text-5xl font-display mb-8">Uncompromising Quality</h2>
-                <div class="w-24 h-[1px] bg-brand-copper mx-auto" aria-hidden="true"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto relative z-10">
-                <!-- Protocol Card: Premium Comfort -->
-                <article class="p-10 border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] hover:border-brand-copper/50 transition-all duration-500 reveal-up hoverable group">
-                    <div class="w-12 h-12 mb-8 text-brand-copper" aria-hidden="true">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="square" stroke-linejoin="miter" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"></path></svg>
-                    </div>
-                    <h3 class="font-display text-2xl mb-6 text-white group-hover:text-brand-copper transition-colors">Premium Comfort</h3>
-                    <ul class="font-serif text-brand-sand/60 space-y-4 text-lg font-light">
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> Climate-controlled precision (A/C & Heating)</li>
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> Fully stocked modern kitchens</li>
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> 42-inch HDTVs with premium streaming</li>
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> Dedicated, quiet workspaces with gigabit Wi-Fi</li>
-                    </ul>
-                </article>
-                
-                <!-- Protocol Card: Property Protocol -->
-                <article class="p-10 border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] hover:border-brand-copper/50 transition-all duration-500 reveal-up hoverable group reveal-delay-1">
-                    <div class="w-12 h-12 mb-8 text-brand-copper" aria-hidden="true">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="square" stroke-linejoin="miter" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"></path></svg>
-                    </div>
-                    <h3 class="font-display text-2xl mb-6 text-white group-hover:text-brand-copper transition-colors">Property Protocol</h3>
-                    <ul class="font-serif text-brand-sand/60 space-y-4 text-lg font-light">
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> Strict 3-guest maximum per suite</li>
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> Long-term stays welcomed (28+ days)</li>
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> Pristine on-site laundry facilities</li>
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> Free, dedicated premises parking</li>
-                    </ul>
-                </article>
-
-                <!-- Protocol Card: Security & Access -->
-                <article class="p-10 border border-white/10 bg-white/[0.02] hover:bg-white/[0.04] hover:border-brand-copper/50 transition-all duration-500 reveal-up hoverable group reveal-delay-2">
-                    <div class="w-12 h-12 mb-8 text-brand-copper" aria-hidden="true">
-                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="square" stroke-linejoin="miter" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"></path></svg>
-                    </div>
-                    <h3 class="font-display text-2xl mb-6 text-white group-hover:text-brand-copper transition-colors">Security & Access</h3>
-                    <ul class="font-serif text-brand-sand/60 space-y-4 text-lg font-light">
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> 24/7 Exterior surveillance network</li>
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> Encrypted keypad self check-in</li>
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> Private, unshared entrances for all suites</li>
-                        <li class="flex items-start"><span class="text-brand-copper mr-3 block mt-1 text-sm" aria-hidden="true">◆</span> On-site staff for immediate assistance</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <!-- Location Section -->
-        <section class="py-32 px-6 md:px-12 bg-brand-sand text-brand-espresso border-y border-brand-charcoal/10" aria-labelledby="location-title">
-            <div class="max-w-5xl mx-auto reveal-up">
-                <div class="text-center mb-20">
-                    <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-xs mb-6 font-semibold">Coordinates</p>
-                    <h2 id="location-title" class="text-4xl md:text-5xl font-display mb-6">The Location Matrix</h2>
-                    <p class="font-serif text-brand-charcoal/80 text-xl font-light">Perfectly positioned for business, events, and exploration.</p>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-2 font-serif text-xl">
-                    <div class="flex justify-between items-end border-b border-brand-charcoal/20 py-6 hoverable group">
-                        <span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4">
-                            <svg class="w-5 h-5 text-brand-copper/50 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Downtown Phoenix
-                        </span>
-                        <div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/30 transition-colors" aria-hidden="true"></div>
-                        <span class="text-brand-copper font-sans tracking-[0.2em] text-sm font-medium">2.0 MI</span>
-                    </div>
-                    <div class="flex justify-between items-end border-b border-brand-charcoal/20 py-6 hoverable group">
-                        <span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4">
-                            <svg class="w-5 h-5 text-brand-copper/50 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Phoenix Convention Center
-                        </span>
-                        <div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/30 transition-colors" aria-hidden="true"></div>
-                        <span class="text-brand-copper font-sans tracking-[0.2em] text-sm font-medium">3.0 MI</span>
-                    </div>
-                    <div class="flex justify-between items-end border-b border-brand-charcoal/20 py-6 hoverable group">
-                        <span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4">
-                            <svg class="w-5 h-5 text-brand-copper/50 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Footprint Center
-                        </span>
-                        <div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/30 transition-colors" aria-hidden="true"></div>
-                        <span class="text-brand-copper font-sans tracking-[0.2em] text-sm font-medium">3.0 MI</span>
-                    </div>
-                    <div class="flex justify-between items-end border-b border-brand-charcoal/20 py-6 hoverable group">
-                        <span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4">
-                            <svg class="w-5 h-5 text-brand-copper/50 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Chase Field
-                        </span>
-                        <div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/30 transition-colors" aria-hidden="true"></div>
-                        <span class="text-brand-copper font-sans tracking-[0.2em] text-sm font-medium">3.0 MI</span>
-                    </div>
-                    <div class="flex justify-between items-end border-b border-brand-charcoal/20 py-6 hoverable group">
-                        <span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4">
-                            <svg class="w-5 h-5 text-brand-copper/50 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Phoenix Art Museum
-                        </span>
-                        <div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/30 transition-colors" aria-hidden="true"></div>
-                        <span class="text-brand-copper font-sans tracking-[0.2em] text-sm font-medium">3.0 MI</span>
-                    </div>
-                    <div class="flex justify-between items-end border-b border-brand-charcoal/20 py-6 hoverable group">
-                        <span class="text-brand-charcoal group-hover:text-brand-copper transition-colors flex items-center gap-4">
-                            <svg class="w-5 h-5 text-brand-copper/50 group-hover:text-brand-copper transition-colors flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
-                            Sky Harbor Airport
-                        </span>
-                        <div class="flex-grow border-b border-dashed border-brand-charcoal/10 mx-4 relative top-[-6px] group-hover:border-brand-copper/30 transition-colors" aria-hidden="true"></div>
-                        <span class="text-brand-copper font-sans tracking-[0.2em] text-sm font-medium">10.0 MI</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="py-32 px-6 md:px-12 lg:px-24 bg-brand-charcoal text-brand-sand overflow-hidden relative" aria-labelledby="testimonials-title">
-            <div class="absolute -left-[20%] top-0 w-1/2 h-full bg-brand-espresso/30 skew-x-[30deg] pointer-events-none" aria-hidden="true"></div>
-
-            <div class="max-w-7xl mx-auto relative z-10">
-                <div class="flex flex-col md:flex-row justify-between items-end mb-20 reveal-up">
-                    <div>
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="w-12 h-[1px] bg-brand-copper" aria-hidden="true"></div>
-                            <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-xs font-semibold">Guest Experiences</p>
-                        </div>
-                        <h2 id="testimonials-title" class="text-4xl md:text-5xl lg:text-6xl font-display leading-[1.1]">Rated 4.94<span class="text-2xl text-brand-sand/50">/5.00</span></h2>
-                    </div>
-                    <p class="font-serif text-brand-sand/60 mt-6 md:mt-0 italic text-xl">Based on 103 verified reviews</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <blockquote class="bg-brand-espresso/80 backdrop-blur-md p-10 border border-white/5 reveal-up hover:-translate-y-2 transition-transform duration-500 ease-expo hoverable relative group">
-                        <div class="absolute top-0 right-0 p-6 text-brand-copper/20 group-hover:text-brand-copper/40 transition-colors" aria-hidden="true">
-                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                        </div>
-                        <div class="flex text-brand-copper mb-6 tracking-widest text-sm" aria-label="5 out of 5 stars">★★★★★</div>
-                        <p class="font-serif text-xl text-brand-sand/90 leading-relaxed mb-8 font-light relative z-10">"Another amazing stay! My favorite place to stay when in Phoenix. The host is amazing and responsive as always. Everything is clean and comfortable. Can't wait to come back again soon!"</p>
-                        <footer class="font-sans text-xs tracking-widest uppercase text-brand-copper font-medium">— Katie, Wyoming</footer>
-                    </blockquote>
-                    
-                    <!-- Testimonial 2 -->
-                    <blockquote class="bg-brand-espresso/80 backdrop-blur-md p-10 border border-white/5 reveal-up reveal-delay-1 hover:-translate-y-2 transition-transform duration-500 ease-expo hoverable relative group">
-                        <div class="absolute top-0 right-0 p-6 text-brand-copper/20 group-hover:text-brand-copper/40 transition-colors" aria-hidden="true">
-                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                        </div>
-                        <div class="flex text-brand-copper mb-6 tracking-widest text-sm" aria-label="5 out of 5 stars">★★★★★</div>
-                        <p class="font-serif text-xl text-brand-sand/90 leading-relaxed mb-8 font-light relative z-10">"Cecy offers exceptional hospitality, responds promptly to any concerns, and truly goes above and beyond for a perfect stay. The interior design felt incredibly luxurious. Couldn't recommend her more highly!"</p>
-                        <footer class="font-sans text-xs tracking-widest uppercase text-brand-copper font-medium">— Melissa, California</footer>
-                    </blockquote>
-                    
-                    <!-- Testimonial 3 -->
-                    <blockquote class="bg-brand-espresso/80 backdrop-blur-md p-10 border border-white/5 reveal-up reveal-delay-2 hover:-translate-y-2 transition-transform duration-500 ease-expo hoverable relative group">
-                        <div class="absolute top-0 right-0 p-6 text-brand-copper/20 group-hover:text-brand-copper/40 transition-colors" aria-hidden="true">
-                            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-                        </div>
-                        <div class="flex text-brand-copper mb-6 tracking-widest text-sm" aria-label="5 out of 5 stars">★★★★★</div>
-                        <p class="font-serif text-xl text-brand-sand/90 leading-relaxed mb-8 font-light relative z-10">"I booked at the last minute and was pleasantly surprised upon arrival. The climate control worked wonderfully, kitchen was fully stocked... I felt completely secure. An absolute hidden gem."</p>
-                        <footer class="font-sans text-xs tracking-widest uppercase text-brand-copper font-medium">— Jabari, Arizona</footer>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-brand-espresso pt-32 pb-12 border-t border-white/5 text-brand-sand relative overflow-hidden">
-        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1500px] opacity-5 pointer-events-none select-none" aria-hidden="true">
-            <span class="font-display text-[15vw] leading-none text-white whitespace-nowrap">CASA CECY</span>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-24">
-                <div class="lg:col-span-2">
-                    <h2 class="font-display text-4xl tracking-[0.2em] uppercase mb-6 text-white">Casa Cecy</h2>
-                    <p class="font-serif text-lg text-brand-sand/60 max-w-sm mb-8">Redefining the short-term stay through intentional design and personalized hospitality.</p>
-                </div>
-                
-                <div>
-                    <h3 class="font-sans text-xs tracking-widest uppercase text-brand-copper mb-6 font-semibold">Directory</h3>
-                    <ul class="space-y-4 font-serif text-brand-sand/70">
-                        <li><a href="#vision" class="hover:text-white transition-colors hoverable">The Concept</a></li>
-                        <li><a href="#suites" class="hover:text-white transition-colors hoverable">Accommodations</a></li>
-                        <li><a href="#protocols" class="hover:text-white transition-colors hoverable">Protocols</a></li>
-                        <li><button type="button" class="hover:text-white transition-colors hoverable text-left" onclick="toggleModal('booking-modal')">Reservations</button></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="font-sans text-xs tracking-widest uppercase text-brand-copper mb-6 font-semibold">Stay Informed</h3>
-                    <p class="font-serif text-brand-sand/70 mb-4">Join our private registry for seasonal availability.</p>
-                    <form class="flex items-end border-b border-white/20 pb-2 focus-within:border-brand-copper transition-colors" onsubmit="event.preventDefault(); handleNewsletterSubmit(this);">
-                        <label for="newsletter-email" class="sr-only">Email Address</label>
-                        <input 
-                            type="email" 
-                            id="newsletter-email"
-                            name="email"
-                            placeholder="Email Address" 
-                            required
-                            class="bg-transparent border-none outline-none w-full text-white font-serif placeholder-brand-sand/30 hoverable-input">
-                        <button type="submit" class="text-brand-copper font-sans text-xs tracking-widest uppercase hoverable ml-4 hover:text-white transition-colors whitespace-nowrap">Submit</button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-brand-sand/40 font-sans text-xs tracking-wider">
-                <p>© 2026 Casa Cecy Community. Phoenix, Arizona.</p>
-                <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#" class="hover:text-brand-copper transition-colors hoverable">Privacy</a>
-                    <a href="#" class="hover:text-brand-copper transition-colors hoverable">Terms</a>
-                    <a href="#" class="hover:text-brand-copper transition-colors hoverable" aria-label="Visit our Instagram page">Instagram</a>
-                </div>
+            <div>
+                <h3 class="font-sans text-[9px] tracking-[0.3em] uppercase text-brand-copper mb-6 font-semibold">Stay Informed</h3>
+                <p class="font-serif text-brand-sand/55 mb-5 font-light text-sm leading-relaxed">Join our private registry for seasonal availability and first access.</p>
+                <form class="flex items-end border-b border-white/15 pb-2 focus-within:border-brand-copper transition-colors"
+                      onsubmit="event.preventDefault(); handleNewsletterSubmit(this);" aria-label="Newsletter signup">
+                    <label for="newsletter-email" class="sr-only">Email Address</label>
+                    <input type="email" id="newsletter-email" name="email" placeholder="Email Address" required
+                           class="bg-transparent border-none outline-none w-full text-white font-serif text-sm placeholder-brand-sand/25 hoverable-input">
+                    <button type="submit" class="text-brand-copper font-sans text-[9px] tracking-[0.3em] uppercase hoverable ml-4 hover:text-white transition-colors whitespace-nowrap flex-shrink-0">Submit</button>
+                </form>
             </div>
         </div>
-    </footer>
-
-    <!-- Booking Modal -->
-    <div id="booking-modal" class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 ease-expo" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
-        <div class="absolute inset-0 bg-brand-espresso/90 backdrop-blur-xl" onclick="toggleModal('booking-modal')" aria-label="Close modal"></div>
-        
-        <div class="bg-brand-charcoal border border-white/10 p-10 md:p-16 w-full max-w-2xl relative z-10 transform translate-y-12 transition-transform duration-700 ease-expo shadow-2xl mx-4" id="modal-panel">
-            <button type="button" onclick="toggleModal('booking-modal')" class="absolute top-6 right-6 text-brand-sand/50 hover:text-white transition-colors hoverable p-2 group" aria-label="Close modal">
-                <svg class="w-6 h-6 transform group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            
-            <div class="mb-12 text-center">
-                <p class="font-display tracking-[0.3em] text-brand-copper uppercase text-xs mb-4 font-semibold">Inquiry</p>
-                <h2 id="modal-title" class="text-3xl md:text-4xl font-display text-white mb-4">Reserve Your Suite</h2>
-                <p class="font-serif text-brand-sand/60">Submit your dates and preferences. Our concierge will respond within hours.</p>
-            </div>
-            
-            <form id="reservation-form" class="space-y-8" onsubmit="event.preventDefault(); handleReservationSubmit(this);" novalidate>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="input-group">
-                        <input type="text" id="name" name="name" placeholder=" " required class="hoverable-input" autocomplete="name">
-                        <label for="name">Full Name</label>
-                    </div>
-                    <div class="input-group">
-                        <input type="email" id="email" name="email" placeholder=" " required class="hoverable-input" autocomplete="email">
-                        <label for="email">Email Address</label>
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="input-group">
-                        <input type="date" id="arrival" name="arrival" placeholder=" " required class="hoverable-input" min="">
-                        <label for="arrival">Arrival Date</label>
-                    </div>
-                    <div class="input-group">
-                        <input type="date" id="departure" name="departure" placeholder=" " required class="hoverable-input" min="">
-                        <label for="departure">Departure Date</label>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <select id="suite" name="suite" required class="hoverable-input text-brand-sand/70 appearance-none bg-transparent cursor-pointer">
-                        <option value="" disabled selected>Select a suite</option>
-                        <option value="sonora" class="bg-brand-charcoal text-white">The Sonora (1 Bed)</option>
-                        <option value="sedona" class="bg-brand-charcoal text-white">The Sedona (2 Bed)</option>
-                        <option value="verde" class="bg-brand-charcoal text-white">The Verde (1 Bed + Courtyard)</option>
-                    </select>
-                    <label for="suite">Suite Preference</label>
-                    <div class="absolute right-0 top-1/2 transform -translate-y-1/2 pointer-events-none text-brand-copper" aria-hidden="true">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                    </div>
-                </div>
-
-                <button type="submit" id="submit-btn" class="w-full bg-brand-terracotta text-white font-display text-sm tracking-[0.3em] uppercase py-5 mt-4 transition-all duration-300 hover:bg-brand-copper shadow-lg hover:shadow-brand-copper/20 hoverable disabled:opacity-50 disabled:cursor-not-allowed">
-                    <span id="submit-text">Submit Request</span>
-                    <span id="submit-loading" class="hidden animate-pulse-slow">Processing...</span>
-                </button>
-            </form>
-            
-            <!-- Success Overlay -->
-            <div id="success-overlay" class="absolute inset-0 bg-brand-charcoal flex flex-col items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 z-20 p-10 text-center">
-                <div class="w-16 h-16 rounded-full border-2 border-brand-copper flex items-center justify-center text-brand-copper mb-6" aria-hidden="true">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                </div>
-                <h3 class="font-display text-2xl text-white mb-4">Request Received</h3>
-                <p class="font-serif text-brand-sand/70 mb-8">Our concierge will contact you shortly to confirm your reservation details.</p>
-                <button type="button" onclick="toggleModal('booking-modal'); resetForm();" class="text-brand-copper font-sans text-xs tracking-widest uppercase hoverable border-b border-brand-copper pb-1 hover:text-white transition-colors">Return to Site</button>
+        <div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/[0.07] text-brand-sand/30 font-sans text-[10px] tracking-wider gap-4">
+            <p>© 2026 Casa Cecy Community LLC. Phoenix, Arizona. All rights reserved.</p>
+            <div class="flex items-center space-x-6">
+                <button type="button" onclick="toggleModal('privacy-modal')" class="hover:text-brand-copper transition-colors hoverable">Privacy Policy</button>
+                <button type="button" onclick="toggleModal('terms-modal')"   class="hover:text-brand-copper transition-colors hoverable">Terms of Service</button>
+                <a href="#" class="hover:text-brand-copper transition-colors hoverable" aria-label="Instagram">Instagram</a>
             </div>
         </div>
     </div>
+</footer>
 
-    <script>
-        (function() {
-            'use strict';
+<!-- ══════════════════════════════════════════
+     BOOKING MODAL
+═══════════════════════════════════════════ -->
+<div id="booking-modal"
+     class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500"
+     role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="absolute inset-0 bg-brand-espresso/92 backdrop-blur-xl" onclick="toggleModal('booking-modal')"></div>
+    <div id="booking-panel"
+         class="bg-brand-charcoal border border-white/10 p-10 md:p-14 w-full max-w-2xl relative z-10 transform translate-y-10 transition-transform duration-700 shadow-2xl mx-4 max-h-[92vh] overflow-y-auto">
+        <button type="button" onclick="toggleModal('booking-modal')"
+                class="absolute top-5 right-5 text-brand-sand/40 hover:text-white transition-colors hoverable p-2 group" aria-label="Close modal">
+            <svg class="w-5 h-5 transform group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <div class="mb-10 text-center">
+            <p class="font-display tracking-[0.35em] text-brand-copper uppercase text-[9px] mb-4 font-semibold">Inquiry</p>
+            <h2 id="modal-title" class="font-display text-3xl md:text-4xl text-white mb-3">Reserve Your Suite</h2>
+            <p class="font-serif text-brand-sand/50 text-sm">Submit your dates and preferences. Our concierge responds within hours.</p>
+        </div>
+        <form id="reservation-form" class="space-y-8" onsubmit="event.preventDefault(); handleReservationSubmit(this);" novalidate>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="input-group"><input type="text" id="name" name="name" placeholder=" " required autocomplete="name"><label for="name">Full Name</label></div>
+                <div class="input-group"><input type="email" id="email" name="email" placeholder=" " required autocomplete="email"><label for="email">Email Address</label></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="input-group"><input type="date" id="arrival" name="arrival" placeholder=" " required min=""><label for="arrival">Arrival Date</label></div>
+                <div class="input-group"><input type="date" id="departure" name="departure" placeholder=" " required min=""><label for="departure">Departure Date</label></div>
+            </div>
+            <div class="input-group">
+                <select id="suite" name="suite" required class="appearance-none bg-transparent cursor-pointer text-brand-sand/60">
+                    <option value="" disabled selected>Select a suite</option>
+                    <option value="sonora" class="bg-brand-charcoal text-white">The Sonora — 1 Bed, Kitchenette</option>
+                    <option value="sedona" class="bg-brand-charcoal text-white">The Sedona — 2 Bed, Full Kitchen</option>
+                    <option value="verde"  class="bg-brand-charcoal text-white">The Verde — 1 Bed, Private Courtyard</option>
+                </select>
+                <label for="suite">Suite Preference</label>
+                <div class="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none text-brand-copper" aria-hidden="true">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                </div>
+            </div>
+            <button type="submit" id="submit-btn"
+                    class="w-full bg-brand-terracotta text-white font-display text-xs tracking-[0.35em] uppercase py-5 transition-all duration-300 hover:bg-brand-copper shadow-lg hoverable disabled:opacity-50 disabled:cursor-not-allowed">
+                <span id="submit-text">Submit Request</span>
+                <span id="submit-loading" class="hidden animate-pulse-slow">Processing…</span>
+            </button>
+        </form>
+        <div id="success-overlay"
+             class="absolute inset-0 bg-brand-charcoal flex flex-col items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 z-20 p-10 text-center">
+            <div class="w-16 h-16 rounded-full border-2 border-brand-copper flex items-center justify-center text-brand-copper mb-6" aria-hidden="true">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            </div>
+            <h3 class="font-display text-2xl text-white mb-4">Request Received</h3>
+            <p class="font-serif text-brand-sand/60 mb-8 leading-relaxed">Our concierge will contact you shortly to confirm your reservation details and coordinate your arrival.</p>
+            <button type="button" onclick="toggleModal('booking-modal'); resetForm();"
+                    class="text-brand-copper font-sans text-[9px] tracking-[0.3em] uppercase hoverable border-b border-brand-copper pb-0.5 hover:text-white transition-colors">Return to Site</button>
+        </div>
+    </div>
+</div>
 
-            // State
-            let isMenuOpen = false;
-            let isModalOpen = false;
+<!-- ══════════════════════════════════════════
+     PRIVACY POLICY MODAL
+═══════════════════════════════════════════ -->
+<div id="privacy-modal"
+     class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500"
+     role="dialog" aria-modal="true" aria-labelledby="privacy-title" aria-hidden="true">
+    <div class="absolute inset-0 bg-brand-espresso/92 backdrop-blur-xl" onclick="toggleModal('privacy-modal')"></div>
+    <div id="privacy-panel"
+         class="bg-brand-charcoal border border-white/10 w-full max-w-2xl relative z-10 transform translate-y-10 transition-transform duration-700 shadow-2xl mx-4">
+        <div class="flex items-center justify-between px-10 py-7 border-b border-white/[0.07]">
+            <div><p class="font-display tracking-[0.3em] text-brand-copper uppercase text-[9px] mb-1 font-semibold">Legal</p><h2 id="privacy-title" class="font-display text-xl text-white">Privacy Policy</h2></div>
+            <button type="button" onclick="toggleModal('privacy-modal')" class="text-brand-sand/40 hover:text-white transition-colors hoverable p-2 group" aria-label="Close Privacy Policy">
+                <svg class="w-5 h-5 group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="legal-body px-10 py-8 font-serif text-brand-sand/65 text-sm leading-relaxed space-y-6">
+            <p class="font-sans text-[9px] tracking-widest uppercase text-brand-sand/30">Last updated: January 1, 2026</p>
+            <p>Casa Cecy Community LLC ("Casa Cecy," "we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit <strong class="text-brand-sand/80">casacecy.com</strong> or interact with our reservation services.</p>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">1. Information We Collect</h3><p class="mb-2"><strong class="text-brand-sand/80">Personal Identification:</strong> Name, email address, phone number, and mailing address when you submit a reservation inquiry or newsletter signup.</p><p class="mb-2"><strong class="text-brand-sand/80">Usage Data:</strong> IP address, browser type, referring URLs, pages visited, and timestamps, collected automatically via server logs.</p><p><strong class="text-brand-sand/80">Communications:</strong> Any messages you send us via email or our contact form.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">2. How We Use Your Information</h3><p>We use your information to: process and respond to reservation inquiries; send confirmation and hospitality correspondence; deliver the newsletter registry you subscribed to; improve the functionality and content of our website; comply with legal obligations; and protect against fraudulent or unauthorized activity.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">3. Information Sharing</h3><p>We do not sell, trade, or rent your personal information to third parties. We may share information with trusted service providers who operate under strict confidentiality agreements and are contractually prohibited from using your data for any other purpose.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">4. Cookies</h3><p>Our website may use session cookies to improve user experience. Cookies do not collect personally identifiable information. You may disable cookies through your browser settings without affecting your ability to view our site.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">5. Data Retention</h3><p>Reservation inquiry data is retained for up to 24 months. Newsletter subscriber data is retained until you unsubscribe. You may request deletion of your data at any time by contacting us at <strong class="text-brand-copper">privacy@casacecy.com</strong>.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">6. Security</h3><p>We implement industry-standard security measures including HTTPS encryption, access controls, and periodic security reviews. No method of electronic transmission is 100% secure; we cannot guarantee absolute data security.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">7. Your Rights</h3><p>You have the right to: access the personal data we hold about you; request correction of inaccurate data; request deletion of your personal data; withdraw consent for marketing communications at any time. Submit requests to <strong class="text-brand-copper">privacy@casacecy.com</strong>.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">8. Children's Privacy</h3><p>Our services are not directed to individuals under the age of 18. We do not knowingly collect personal information from minors.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">9. Contact</h3><p>For privacy-related inquiries: <strong class="text-brand-copper">privacy@casacecy.com</strong> · Casa Cecy Community LLC · Phoenix, Arizona 85001</p></div>
+        </div>
+        <div class="px-10 py-5 border-t border-white/[0.07] flex justify-end">
+            <button type="button" onclick="toggleModal('privacy-modal')" class="hoverable font-display text-[9px] tracking-[0.3em] uppercase text-brand-copper hover:text-white transition-colors border-b border-brand-copper pb-0.5">Close</button>
+        </div>
+    </div>
+</div>
 
-            // DOM Elements
-            const cursor = document.getElementById('cursor');
-            const navbar = document.getElementById('navbar');
-            const heroParallax = document.getElementById('hero-parallax');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const mobileBtn = document.getElementById('mobile-menu-btn');
-            const line1 = document.getElementById('line1');
-            const line2 = document.getElementById('line2');
-            const magneticElements = document.querySelectorAll('.magnetic-wrap');
+<!-- ══════════════════════════════════════════
+     TERMS OF SERVICE MODAL
+═══════════════════════════════════════════ -->
+<div id="terms-modal"
+     class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500"
+     role="dialog" aria-modal="true" aria-labelledby="terms-title" aria-hidden="true">
+    <div class="absolute inset-0 bg-brand-espresso/92 backdrop-blur-xl" onclick="toggleModal('terms-modal')"></div>
+    <div id="terms-panel"
+         class="bg-brand-charcoal border border-white/10 w-full max-w-2xl relative z-10 transform translate-y-10 transition-transform duration-700 shadow-2xl mx-4">
+        <div class="flex items-center justify-between px-10 py-7 border-b border-white/[0.07]">
+            <div><p class="font-display tracking-[0.3em] text-brand-copper uppercase text-[9px] mb-1 font-semibold">Legal</p><h2 id="terms-title" class="font-display text-xl text-white">Terms of Service</h2></div>
+            <button type="button" onclick="toggleModal('terms-modal')" class="text-brand-sand/40 hover:text-white transition-colors hoverable p-2 group" aria-label="Close Terms of Service">
+                <svg class="w-5 h-5 group-hover:rotate-90 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="legal-body px-10 py-8 font-serif text-brand-sand/65 text-sm leading-relaxed space-y-6">
+            <p class="font-sans text-[9px] tracking-widest uppercase text-brand-sand/30">Last updated: January 1, 2026</p>
+            <p>These Terms of Service ("Terms") govern your access to and use of Casa Cecy's website, reservation system, and hospitality services. By making a reservation inquiry or occupying a Casa Cecy suite, you agree to be bound by these Terms.</p>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">1. Reservations & Bookings</h3><p>All reservation requests are subject to availability and confirmation by our concierge team. A confirmed reservation constitutes a binding agreement between the guest and Casa Cecy Community LLC. Reservation inquiries submitted via our online form are not guaranteed until confirmed in writing by Casa Cecy.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">2. Guest Conduct & Occupancy</h3><p>Each suite accommodates a strict maximum of three (3) guests. Unauthorized guests, excessive noise, parties, or events that disturb community residents are grounds for immediate termination of the stay without refund. Guests are responsible for any damage caused to the suite, furnishings, or community property during their stay.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">3. Check-In & Check-Out</h3><p>Standard check-in is available from 3:00 PM and check-out by 11:00 AM. Early check-in and late check-out are subject to availability and must be arranged in advance with our concierge.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">4. Cancellation Policy</h3><p class="mb-2"><strong class="text-brand-sand/80">Short-Term Stays (under 28 nights):</strong> Free cancellation up to 7 days before check-in. Cancellations within 7 days forfeit the first night's rate. No-shows forfeit the full reservation amount.</p><p><strong class="text-brand-sand/80">Extended Residency (28+ nights):</strong> Free cancellation up to 30 days before check-in. Cancellations within 30 days forfeit 25% of the total reservation amount.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">5. No Smoking & Pet Policy</h3><p>All Casa Cecy suites and common areas are strictly non-smoking. Vaping and electronic cigarette use is also prohibited indoors. Pets are not permitted unless expressly authorized in writing by Casa Cecy management. Violations result in immediate eviction and a minimum deep-cleaning fee of $500.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">6. Surveillance & Security</h3><p>The Casa Cecy community exterior is monitored by 24/7 surveillance cameras for the safety of all residents and guests. Interior surveillance is strictly prohibited. By staying at Casa Cecy, you acknowledge and consent to exterior surveillance in community common areas.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">7. Liability Limitation</h3><p>Casa Cecy Community LLC shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of our services. Our maximum liability in any claim shall not exceed the total amount paid for your reservation.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">8. Governing Law</h3><p>These Terms are governed by the laws of the State of Arizona, United States. Any disputes shall be resolved exclusively in the state or federal courts located in Maricopa County, Arizona.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">9. Amendments</h3><p>Casa Cecy reserves the right to modify these Terms at any time. Updated Terms will be posted with a revised effective date. Continued use of our services after changes constitutes acceptance of the updated Terms.</p></div>
+            <div><h3 class="font-display text-sm text-white tracking-wide mb-3">10. Contact</h3><p>For service-related inquiries: <strong class="text-brand-copper">hello@casacecy.com</strong> · Casa Cecy Community LLC · Phoenix, Arizona 85001</p></div>
+        </div>
+        <div class="px-10 py-5 border-t border-white/[0.07] flex justify-end">
+            <button type="button" onclick="toggleModal('terms-modal')" class="hoverable font-display text-[9px] tracking-[0.3em] uppercase text-brand-copper hover:text-white transition-colors border-b border-brand-copper pb-0.5">Close</button>
+        </div>
+    </div>
+</div>
 
-            // Check if device supports hover
-            const supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+<!-- ══════════════════════════════════════════
+     SCRIPT — performance-critical, deferred inline
+═══════════════════════════════════════════ -->
+<script>
+(function() {
+'use strict';
 
-            // Initialize
-            document.addEventListener('DOMContentLoaded', init);
+/* ── Element refs ─────────────────────────────────────────────── */
+var preloader     = document.getElementById('preloader');
+var cursor        = document.getElementById('cursor');
+var navbar        = document.getElementById('navbar');
+var fallbackImg   = document.getElementById('hero-fallback-img');
+var bgVideo       = document.getElementById('hero-video');
+var mobileMenu    = document.getElementById('mobile-menu');
+var mobileBtn     = document.getElementById('mobile-menu-btn');
+var line1         = document.getElementById('line1');
+var line2         = document.getElementById('line2');
+var magneticElems = document.querySelectorAll('.magnetic-wrap');
 
-            function init() {
-                setupRevealAnimations();
-                setupScrollEffects();
-                setupMobileMenu();
-                setupDateInputs();
-                
-                if (supportsHover) {
-                    setupCustomCursor();
-                    setupMagneticElements();
-                }
+var supportsHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+/* ══════════════════════════════════════════════════════════════════
+   PRELOADER + HERO IMAGE DECODE + VIDEO PIPELINE
+══════════════════════════════════════════════════════════════════ */
+
+/* Phase 1 — Dismiss preloader once hero image is decoded and painted.
+   img.decode() resolves when the image is fully available for compositing.
+   Hard 3s timeout guards against slow connections. */
+function dismissPreloader() {
+    preloader.classList.add('done');
+}
+
+if (fallbackImg.complete && fallbackImg.naturalWidth > 0) {
+    requestAnimationFrame(dismissPreloader);
+} else if ('decode' in fallbackImg) {
+    fallbackImg.decode().then(dismissPreloader).catch(dismissPreloader);
+} else {
+    fallbackImg.addEventListener('load',  dismissPreloader, { once: true });
+    fallbackImg.addEventListener('error', dismissPreloader, { once: true });
+    setTimeout(dismissPreloader, 3000);
+}
+
+/* Phase 2 — Video crossfade once first frame is ready.
+   Video plays at native 1× speed — smooth, no decode chop.
+   The CSS heroSlowDrift animation on #hero-parallax (scale 1.08→1.0
+   over 30s) combined with scroll parallax creates the cinematic feel. */
+
+bgVideo.addEventListener('canplay', function() {
+    /* Play returns a promise — guard the rejection for autoplay policies */
+    var playPromise = bgVideo.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(function() { /* blocked — image stays, no error */ });
+    }
+
+    /* Small ramp: let the compositor render at least one video frame
+       before starting the opacity transition. Prevents single-frame flash. */
+    requestAnimationFrame(function() {
+        requestAnimationFrame(function() {
+            fallbackImg.classList.add('faded');
+            bgVideo.classList.add('visible');
+        });
+    });
+}, { once: true });
+
+/* Phase 3 — Clean loop: jump to 0 slightly before true end.
+   Prevents the browser resync stutter that occurs at exact duration. */
+bgVideo.addEventListener('loadedmetadata', function() {
+    var LOOP_OFFSET = 0.15; /* jump 150ms before natural end */
+    var loopPoint   = Math.max(0, bgVideo.duration - LOOP_OFFSET);
+
+    bgVideo.addEventListener('timeupdate', function() {
+        if (bgVideo.currentTime >= loopPoint) {
+            bgVideo.currentTime = 0;
+        }
+    }, { passive: true });
+});
+
+/* ══════════════════════════════════════════════════════════════════
+   SCROLL — RAF batched, passive
+══════════════════════════════════════════════════════════════════ */
+var scrollTicking = false;
+var lastScrollY = 0;
+
+window.addEventListener('scroll', function() {
+    lastScrollY = window.pageYOffset;
+    if (!scrollTicking) {
+        requestAnimationFrame(handleScroll);
+        scrollTicking = true;
+    }
+}, { passive: true });
+
+function handleScroll() {
+    scrollTicking = false;
+    var s = lastScrollY;
+
+    /* Navbar — gated class toggle, zero unnecessary layout */
+    if (navbar) {
+        if (s > 50 && !navbar.classList.contains('nav-scrolled')) {
+            navbar.classList.add('nav-scrolled');
+        } else if (s <= 50 && navbar.classList.contains('nav-scrolled')) {
+            navbar.classList.remove('nav-scrolled');
+        }
+    }
+
+    /* Hero scroll parallax — applied to the inner image/video wrapper,
+       NOT #hero-parallax (which owns the CSS drift animation).
+       translateY only — no scale override — so drift and parallax compose. */
+    var scrollWrap = document.getElementById('hero-scroll-wrap');
+    if (scrollWrap && s < window.innerHeight) {
+        scrollWrap.style.transform = 'translate3d(0,' + (s * 0.3) + 'px,0)';
+    }
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   INTERSECTION OBSERVER — reveal animations
+══════════════════════════════════════════════════════════════════ */
+var revealIO = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+        if (e.isIntersecting) {
+            e.target.classList.add('active');
+            revealIO.unobserve(e.target);
+        }
+    });
+}, { rootMargin: '0px', threshold: 0.1 });
+
+/* Use requestIdleCallback to batch initial observations off the main thread */
+function scheduleObserve() {
+    document.querySelectorAll('.reveal-up').forEach(function(el) {
+        revealIO.observe(el);
+    });
+}
+if ('requestIdleCallback' in window) {
+    requestIdleCallback(scheduleObserve, { timeout: 400 });
+} else {
+    setTimeout(scheduleObserve, 100);
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   CUSTOM CURSOR — RAF lerp, zero React dependency
+══════════════════════════════════════════════════════════════════ */
+if (supportsHover && cursor) {
+    let mx = innerWidth / 2, my = innerHeight / 2;
+    let cx = mx, cy = my;
+
+    (function renderCursor() {
+        /* Lerp — eased follow with no forced layout */
+        cx += (mx - cx) * 0.14;
+        cy += (my - cy) * 0.14;
+        cursor.style.left = cx + 'px';
+        cursor.style.top  = cy + 'px';
+        requestAnimationFrame(renderCursor);
+    })();
+
+    window.addEventListener('mousemove', function(e) {
+        mx = e.clientX; my = e.clientY;
+    }, { passive: true });
+
+    document.addEventListener('mousedown', function() { cursor.classList.add('clicking'); });
+    document.addEventListener('mouseup',   function() { cursor.classList.remove('clicking'); });
+
+    /* Hover binding — MutationObserver rebinds when DOM updates */
+    function bindHovers() {
+        document.querySelectorAll('a,button,.hoverable,[role="button"]').forEach(function(el) {
+            if (el._cursorBound) return;
+            el._cursorBound = true;
+            el.addEventListener('mouseenter', function() { cursor.classList.add('hovering'); });
+            el.addEventListener('mouseleave', function() { cursor.classList.remove('hovering'); });
+        });
+        document.querySelectorAll('input,select,textarea,.hoverable-input').forEach(function(el) {
+            if (el._cursorInputBound) return;
+            el._cursorInputBound = true;
+            el.addEventListener('mouseenter', function() { cursor.classList.add('hidden-cursor'); });
+            el.addEventListener('mouseleave', function() { cursor.classList.remove('hidden-cursor'); });
+        });
+    }
+    bindHovers();
+    new MutationObserver(bindHovers).observe(document.body, { childList: true, subtree: true });
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   MAGNETIC BUTTONS
+══════════════════════════════════════════════════════════════════ */
+if (supportsHover) {
+    magneticElems.forEach(function(el) {
+        el.addEventListener('mousemove', function(e) {
+            const r = el.getBoundingClientRect();
+            const x = (e.clientX - r.left - r.width  / 2) * 0.28;
+            const y = (e.clientY - r.top  - r.height / 2) * 0.28;
+            el.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+        }, { passive: true });
+        el.addEventListener('mouseleave', function() { el.style.transform = 'translate(0,0)'; });
+    });
+}
+
+/* ══════════════════════════════════════════════════════════════════
+   MOBILE MENU
+══════════════════════════════════════════════════════════════════ */
+var isMenuOpen = false;
+
+if (mobileBtn) {
+    mobileBtn.addEventListener('click', function() { window.toggleMobileMenu(); });
+}
+
+window.toggleMobileMenu = function() {
+    isMenuOpen = !isMenuOpen;
+    const links = document.querySelectorAll('.mobile-link');
+    mobileBtn.setAttribute('aria-expanded', isMenuOpen);
+    mobileMenu.setAttribute('aria-hidden', !isMenuOpen);
+
+    if (isMenuOpen) {
+        mobileMenu.classList.replace('translate-x-full', 'translate-x-0');
+        line1.classList.add('translate-y-[5px]','rotate-45');
+        line2.classList.add('-translate-y-[5px]','-rotate-45');
+        document.body.style.overflow = 'hidden';
+        setTimeout(function() {
+            links.forEach(function(l) {
+                l.classList.replace('opacity-0','opacity-100');
+                l.classList.replace('translate-y-8','translate-y-0');
+            });
+        }, 260);
+    } else {
+        mobileMenu.classList.replace('translate-x-0','translate-x-full');
+        line1.classList.remove('translate-y-[5px]','rotate-45');
+        line2.classList.remove('-translate-y-[5px]','-rotate-45');
+        document.body.style.overflow = '';
+        links.forEach(function(l) {
+            l.classList.replace('opacity-100','opacity-0');
+            l.classList.replace('translate-y-0','translate-y-8');
+        });
+    }
+};
+
+/* ══════════════════════════════════════════════════════════════════
+   MODAL SYSTEM — unified for booking, privacy, terms
+══════════════════════════════════════════════════════════════════ */
+var activeModalId = null;
+
+/* ── ENHANCEMENT 2: Modal Focus Trapping ── */
+var focusTrapHandler = null;
+
+function trapFocus(modal) {
+    var focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (focusableElements.length === 0) return;
+    var firstFocusableElement = focusableElements[0];
+    var lastFocusableElement = focusableElements[focusableElements.length - 1];
+
+    if (focusTrapHandler) modal.removeEventListener('keydown', focusTrapHandler);
+
+    focusTrapHandler = function(e) {
+        var isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+        if (!isTabPressed) return;
+        
+        if (e.shiftKey) { // shift + tab
+            if (document.activeElement === firstFocusableElement) {
+                lastFocusableElement.focus();
+                e.preventDefault();
             }
-
-            // Reveal Animations
-            function setupRevealAnimations() {
-                const observerOptions = {
-                    root: null,
-                    rootMargin: '0px',
-                    threshold: 0.15
-                };
-
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('active');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, observerOptions);
-
-                document.querySelectorAll('.reveal-up').forEach(el => observer.observe(el));
+        } else { // tab
+            if (document.activeElement === lastFocusableElement) {
+                firstFocusableElement.focus();
+                e.preventDefault();
             }
+        }
+    };
+    modal.addEventListener('keydown', focusTrapHandler);
+}
 
-            // Scroll Effects
-            function setupScrollEffects() {
-                let ticking = false;
+window.toggleModal = function(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
 
-                window.addEventListener('scroll', () => {
-                    if (!ticking) {
-                        window.requestAnimationFrame(() => {
-                            handleScroll();
-                            ticking = false;
-                        });
-                        ticking = true;
-                    }
-                }, { passive: true });
-            }
+    /* Derive panel id: booking-modal → booking-panel, privacy-modal → privacy-panel */
+    const panelId = id.replace('-modal', '-panel');
+    const panel   = document.getElementById(panelId);
 
-            function handleScroll() {
-                const scrolled = window.pageYOffset;
+    const opening = modal.classList.contains('pointer-events-none');
 
-                // Navbar styling
-                if (scrolled > 50) {
-                    navbar.classList.add('nav-scrolled');
-                } else {
-                    navbar.classList.remove('nav-scrolled');
-                }
+    /* Close any open modal first */
+    if (activeModalId && activeModalId !== id) {
+        var prev      = document.getElementById(activeModalId);
+        var prevPanel = document.getElementById(activeModalId.replace('-modal', '-panel'));
+        if (prev)      { prev.classList.add('opacity-0','pointer-events-none'); prev.setAttribute('aria-hidden','true'); }
+        if (prevPanel) { prevPanel.classList.remove('translate-y-0'); prevPanel.classList.add('translate-y-10'); }
+        if (focusTrapHandler && prev) prev.removeEventListener('keydown', focusTrapHandler);
+        activeModalId = null;
+    }
 
-                // Hero parallax
-                if (heroParallax && scrolled < window.innerHeight) {
-                    heroParallax.style.transform = `translateY(${scrolled * 0.35}px) scale(1.05)`;
-                }
-            }
+    if (opening) {
+        modal.classList.remove('opacity-0','pointer-events-none');
+        modal.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+        activeModalId = id;
+        requestAnimationFrame(function() {
+            if (panel) { panel.classList.remove('translate-y-10'); panel.classList.add('translate-y-0'); }
+            var firstFocus = modal.querySelector('input,button,select');
+            if (firstFocus) firstFocus.focus();
+            trapFocus(modal); // Initialize the focus trap when opening
+        });
+    } else {
+        if (focusTrapHandler) { modal.removeEventListener('keydown', focusTrapHandler); focusTrapHandler = null; }
+        if (panel) { panel.classList.remove('translate-y-0'); panel.classList.add('translate-y-10'); }
+        setTimeout(function() {
+            modal.classList.add('opacity-0','pointer-events-none');
+            modal.setAttribute('aria-hidden','true');
+            document.body.style.overflow = '';
+            activeModalId = null;
+        }, 260);
+    }
+};
 
-            // Custom Cursor
-            function setupCustomCursor() {
-                let mouseX = window.innerWidth / 2;
-                let mouseY = window.innerHeight / 2;
-                let cursorX = mouseX;
-                let cursorY = mouseY;
+/* ── Escape key ── */
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        if (isMenuOpen)   window.toggleMobileMenu();
+        if (activeModalId) window.toggleModal(activeModalId);
+    }
+});
 
-                function renderCursor() {
-                    const dx = mouseX - cursorX;
-                    const dy = mouseY - cursorY;
-                    cursorX += dx * 0.15;
-                    cursorY += dy * 0.15;
-                    cursor.style.left = cursorX + 'px';
-                    cursor.style.top = cursorY + 'px';
-                    requestAnimationFrame(renderCursor);
-                }
-                requestAnimationFrame(renderCursor);
+/* ══════════════════════════════════════════════════════════════════
+   DATE INPUTS
+══════════════════════════════════════════════════════════════════ */
+document.addEventListener('DOMContentLoaded', function() {
+    var arrival   = document.getElementById('arrival');
+    var departure = document.getElementById('departure');
+    if (!arrival || !departure) return;
+    var today = new Date().toISOString().split('T')[0];
+    arrival.min = today; departure.min = today;
+    arrival.addEventListener('change', function() {
+        if (!arrival.value) return;
+        var nd = new Date(arrival.value);
+        nd.setDate(nd.getDate() + 1);
+        departure.min = nd.toISOString().split('T')[0];
+        if (departure.value && departure.value <= arrival.value) departure.value = '';
+    });
+});
 
-                document.addEventListener('mousemove', (e) => {
-                    mouseX = e.clientX;
-                    mouseY = e.clientY;
-                }, { passive: true });
+/* ══════════════════════════════════════════════════════════════════
+   FORM HANDLERS
+══════════════════════════════════════════════════════════════════ */
+window.handleReservationSubmit = function(form) {
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    var btn  = document.getElementById('submit-btn');
+    var txt  = document.getElementById('submit-text');
+    var load = document.getElementById('submit-loading');
+    btn.disabled = true;
+    txt.classList.add('hidden');
+    load.classList.remove('hidden');
+    setTimeout(function() {
+        var overlay = document.getElementById('success-overlay');
+        if (overlay) overlay.classList.remove('opacity-0','pointer-events-none');
+        btn.disabled = false;
+        txt.classList.remove('hidden');
+        load.classList.add('hidden');
+    }, 1600);
+};
 
-                // Hover states
-                const hoverables = document.querySelectorAll('.hoverable, a, button');
-                const hoverableInputs = document.querySelectorAll('.hoverable-input, input, select, textarea');
+window.resetForm = function() {
+    var form    = document.getElementById('reservation-form');
+    var overlay = document.getElementById('success-overlay');
+    if (form)    form.reset();
+    if (overlay) overlay.classList.add('opacity-0','pointer-events-none');
+};
 
-                hoverables.forEach(el => {
-                    el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
-                    el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
-                });
+window.handleNewsletterSubmit = function(form) {
+    var email = form.querySelector('input[type="email"]');
+    var btn   = form.querySelector('button[type="submit"]');
+    if (!email || !email.value || !btn) return;
+    var orig = btn.textContent;
+    btn.textContent = '✓ Subscribed'; btn.disabled = true; email.value = '';
+    setTimeout(function() { btn.textContent = orig; btn.disabled = false; }, 3000);
+};
 
-                hoverableInputs.forEach(el => {
-                    el.addEventListener('mouseenter', () => cursor.classList.add('hidden-cursor'));
-                    el.addEventListener('mouseleave', () => cursor.classList.remove('hidden-cursor'));
-                });
+})();
+</script>
 
-                // Click states
-                document.addEventListener('mousedown', () => cursor.classList.add('clicking'));
-                document.addEventListener('mouseup', () => cursor.classList.remove('clicking'));
-            }
-
-            // Magnetic Elements
-            function setupMagneticElements() {
-                magneticElements.forEach(el => {
-                    el.addEventListener('mousemove', (e) => {
-                        const rect = el.getBoundingClientRect();
-                        const x = e.clientX - rect.left - rect.width / 2;
-                        const y = e.clientY - rect.top - rect.height / 2;
-                        el.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
-                    });
-
-                    el.addEventListener('mouseleave', () => {
-                        el.style.transform = 'translate(0px, 0px)';
-                    });
-                });
-            }
-
-            // Mobile Menu
-            function setupMobileMenu() {
-                mobileBtn.addEventListener('click', toggleMobileMenu);
-
-                document.querySelectorAll('#mobile-menu a').forEach(link => {
-                    link.addEventListener('click', () => {
-                        if (isMenuOpen) toggleMobileMenu();
-                    });
-                });
-
-                // Close on escape
-                document.addEventListener('keydown', (e) => {
-                    if (e.key === 'Escape') {
-                        if (isMenuOpen) toggleMobileMenu();
-                        if (isModalOpen) toggleModal('booking-modal');
-                    }
-                });
-            }
-
-            // Toggle Mobile Menu (global)
-            window.toggleMobileMenu = function() {
-                const links = document.querySelectorAll('.mobile-link');
-                isMenuOpen = !isMenuOpen;
-
-                mobileBtn.setAttribute('aria-expanded', isMenuOpen);
-                mobileMenu.setAttribute('aria-hidden', !isMenuOpen);
-
-                if (isMenuOpen) {
-                    mobileMenu.classList.remove('translate-x-full');
-                    line1.classList.add('translate-y-[5px]', 'rotate-45');
-                    line2.classList.add('-translate-y-[5px]', '-rotate-45');
-                    document.body.style.overflow = 'hidden';
-
-                    setTimeout(() => {
-                        links.forEach(link => {
-                            link.classList.remove('opacity-0', 'translate-y-8');
-                            link.classList.add('opacity-100', 'translate-y-0');
-                        });
-                    }, 300);
-                } else {
-                    mobileMenu.classList.add('translate-x-full');
-                    line1.classList.remove('translate-y-[5px]', 'rotate-45');
-                    line2.classList.remove('-translate-y-[5px]', '-rotate-45');
-                    document.body.style.overflow = '';
-
-                    links.forEach(link => {
-                        link.classList.add('opacity-0', 'translate-y-8');
-                        link.classList.remove('opacity-100', 'translate-y-0');
-                    });
-                }
-            };
-
-            // Toggle Modal (global)
-            window.toggleModal = function(id) {
-                const modal = document.getElementById(id);
-                const panel = document.getElementById('modal-panel');
-                const firstInput = modal.querySelector('input, button, select');
-
-                isModalOpen = !isModalOpen;
-                modal.setAttribute('aria-hidden', !isModalOpen);
-
-                if (isModalOpen) {
-                    modal.classList.remove('opacity-0', 'pointer-events-none');
-                    document.body.style.overflow = 'hidden';
-
-                    setTimeout(() => {
-                        panel.classList.remove('translate-y-12');
-                        panel.classList.add('translate-y-0');
-                        if (firstInput) firstInput.focus();
-                    }, 50);
-                } else {
-                    panel.classList.remove('translate-y-0');
-                    panel.classList.add('translate-y-12');
-
-                    setTimeout(() => {
-                        modal.classList.add('opacity-0', 'pointer-events-none');
-                        document.body.style.overflow = '';
-                    }, 300);
-                }
-            };
-
-            // Date Input Setup
-            function setupDateInputs() {
-                const arrivalInput = document.getElementById('arrival');
-                const departureInput = document.getElementById('departure');
-
-                if (arrivalInput && departureInput) {
-                    // Set minimum date to today
-                    const today = new Date().toISOString().split('T')[0];
-                    arrivalInput.min = today;
-                    departureInput.min = today;
-
-                    // Update departure min when arrival changes
-                    arrivalInput.addEventListener('change', () => {
-                        if (arrivalInput.value) {
-                            const nextDay = new Date(arrivalInput.value);
-                            nextDay.setDate(nextDay.getDate() + 1);
-                            departureInput.min = nextDay.toISOString().split('T')[0];
-
-                            if (departureInput.value && departureInput.value <= arrivalInput.value) {
-                                departureInput.value = '';
-                            }
-                        }
-                    });
-                }
-            }
-
-            // Handle Reservation Submit (global)
-            window.handleReservationSubmit = function(form) {
-                const btn = document.getElementById('submit-btn');
-                const submitText = document.getElementById('submit-text');
-                const submitLoading = document.getElementById('submit-loading');
-
-                // Basic validation
-                if (!form.checkValidity()) {
-                    form.reportValidity();
-                    return;
-                }
-
-                // Show loading state
-                btn.disabled = true;
-                submitText.classList.add('hidden');
-                submitLoading.classList.remove('hidden');
-
-                // Simulate API call
-                setTimeout(() => {
-                    document.getElementById('success-overlay').classList.remove('opacity-0', 'pointer-events-none');
-                    btn.disabled = false;
-                    submitText.classList.remove('hidden');
-                    submitLoading.classList.add('hidden');
-                }, 1500);
-            };
-
-            // Reset Form (global)
-            window.resetForm = function() {
-                const form = document.getElementById('reservation-form');
-                const successOverlay = document.getElementById('success-overlay');
-
-                if (form) form.reset();
-                if (successOverlay) {
-                    successOverlay.classList.add('opacity-0', 'pointer-events-none');
-                }
-            };
-
-            // Handle Newsletter Submit (global)
-            window.handleNewsletterSubmit = function(form) {
-                const email = form.querySelector('input[type="email"]');
-                if (email && email.value) {
-                    // Simulate submission
-                    const btn = form.querySelector('button');
-                    const originalText = btn.textContent;
-                    btn.textContent = 'Done!';
-                    btn.disabled = true;
-                    email.value = '';
-
-                    setTimeout(() => {
-                        btn.textContent = originalText;
-                        btn.disabled = false;
-                    }, 2000);
-                }
-            };
-
-        })();
-    </script>
 </body>
 </html>
